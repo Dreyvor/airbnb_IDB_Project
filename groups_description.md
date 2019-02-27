@@ -6,6 +6,7 @@
 3. name
 4. summary
 5. space
+26. city
 
 ### description_Listing:
 6. description
@@ -16,21 +17,22 @@
 
 ### Location_listing:
 25. neighbourghood
-26. city
-27. country_code
-28. country
 29. latitude
 30. longitude
+
+###Country
+27. country_code
+28. country
 
 ### House_details:
 10. access
 11. interaction
 12. house_rules
-
-### house_plan:
 31. property_type
 32. room_type
 33. accomodates
+
+### house_plan:
 34. bathrooms
 35. bedrooms
 36. beds
