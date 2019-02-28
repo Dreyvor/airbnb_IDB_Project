@@ -8,19 +8,19 @@
 5. space
 26. city
 
-### description_Listing:
+### Listing_description:
 6. description
 7. neighborhood_overview
 8. notes
 9. transit
 13. picture_url
 
-### Location_listing:
+### Listing_location:
 25. neighbourghood
 29. latitude
 30. longitude
 
-###Country
+### Country
 27. country_code
 28. country
 
@@ -66,7 +66,7 @@
 43. security_deposit
 44. cleaning_fee
 
-### Additional_informations_price:
+### Price_additional_informations:
 45. guests_included
 46. extra_people
 47. minimum_nights
@@ -77,7 +77,7 @@
 49. review_scores_rating
 50. review_scores_accuracy
 
-### Additional_informations_review:
+### Review_additional_informations:
 51. review_scores_cleanliness
 52. review_scores_checkin
 53. review_scores_communication
