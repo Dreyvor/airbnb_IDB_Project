@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="922F52D0-73EE-1C74-F60A-27B5361E1FE2" name="Contract_Policies">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:11:39 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CP_ID" id="7D1BD15E-2954-03A8-F27F-7A1653A372ED">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:11:52 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="is_business_travel_ready" id="EFE5ABC1-7F85-A8D6-22CB-626F36853709">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:12:08 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="cancellation_policy" id="810B77DE-4A72-372F-2967-CF60DEE9CA98">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:12:31 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+</Attribute>
+<Attribute name="require_guest_profile_picture" id="0F38E7B1-CBCC-C27C-DBDF-151C663DBCE6">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:12:47 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="require_guest_phone_verification" id="ADA1C1CD-79AB-2C3B-61B7-69E4E5EBD4F0">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:13:07 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="require_guest_profile_picture_2" id="3398CD17-B77F-EB37-888E-52A07672BF6C">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:13:25 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7ADA3688-B265-AA7B-3C22-065B091EF0F7" name="{entity} PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:11:59 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7D1BD15E-2954-03A8-F27F-7A1653A372ED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

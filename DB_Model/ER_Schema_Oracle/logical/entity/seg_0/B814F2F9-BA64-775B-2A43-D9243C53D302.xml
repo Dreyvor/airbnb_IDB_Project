@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B814F2F9-BA64-775B-2A43-D9243C53D302" name="Listing">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>3DC0550A-CD85-A01A-BB1F-BC7262EF02C5</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="L_ID" id="A302AE42-BA70-59FE-0E22-E9B77DA5EBD0">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>BF529A92-817A-0488-5A17-D9DCF7547803</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="listing_url" id="E9F16795-28FE-7D78-D6D5-0C3427A28807">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>0B5F303A-0C76-D007-08B4-37676C6F4050</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="name" id="882A0E47-5241-1E08-4111-169625FB0010">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>1D885420-EF43-754D-8C01-4FDE09099276</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="space" id="3BBE62F9-949A-BAFF-F1B2-14DE206DF3F2">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>CE43A382-D7B7-C9B4-2DC7-51DF4E53B30E</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="summary" id="3A227AA6-6588-B892-765C-F251D661EC5C">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>52B5DC28-C8A8-44F3-9064-95EEF2D10EAE</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="city" id="89509D0E-1B62-34CE-2620-801C66263A38">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>89638520-5969-009F-4DDD-C4DF86DD6F1D</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="31BAAF53-64C6-5988-9428-6525A34128E3" name="{entity} PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:03:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<importedID>CEAEC03E-A80C-E8A1-1653-68EFFB8E1064</importedID>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A302AE42-BA70-59FE-0E22-E9B77DA5EBD0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

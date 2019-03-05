@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ER_Schema_Oracle" id="59907425-A1F2-674B-A2F0-984E4B158E16" version="3.5">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:02:42 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>59907425-A1F2-674B-A2F0-984E4B158E16</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="BCF5ED3D-ABF4-9EAD-E3CC-1BB96B19740A">
+<designStoragePath>/media/brad/HDD_1TB_intern/EPFL/SYSCOM/BA6/DB/airbnb_IDB_Project/DB_Model/ER_Schema_Oracle</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

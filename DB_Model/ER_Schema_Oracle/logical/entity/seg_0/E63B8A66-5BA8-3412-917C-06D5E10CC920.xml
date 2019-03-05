@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E63B8A66-5BA8-3412-917C-06D5E10CC920" name="Review_add_infos">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:08:07 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RAI_ID" id="BCD802C5-D1B0-E189-E247-4FAB70EF4D78">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:08:21 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="review_scores_value" id="CD0829C5-2648-9A97-B84C-730DDE5ED2F0">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:08:29 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+</Attribute>
+<Attribute name="review_scores_location" id="E80827F3-7B52-F250-E744-32B233FE0F6B">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:08:44 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+</Attribute>
+<Attribute name="review_scores_communication" id="ECACDF36-599B-A35A-B996-97EE9FFEF11E">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:09:17 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+</Attribute>
+<Attribute name="review_scores_checkin" id="28BB6BE0-BC86-5C28-1C22-D9F55A56D4CE">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:09:59 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+</Attribute>
+<Attribute name="review_scores_cleanliness" id="A5C00D1A-2DD3-4169-861B-2C5167837BD2">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:10:12 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="50D85926-6CD8-4A58-280A-14755026802E" name="{entity} PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-05 18:08:26 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="A27D4331-1D50-7457-3EA9-93140ADC160F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BCD802C5-D1B0-E189-E247-4FAB70EF4D78</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

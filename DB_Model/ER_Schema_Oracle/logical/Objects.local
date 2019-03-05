@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="922F52D0-73EE-1C74-F60A-27B5361E1FE2" name="Contract_Policies" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E7EA62F7-9A49-6102-C22B-FC093485318F" name="Country" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B814F2F9-BA64-775B-2A43-D9243C53D302" name="Listing" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4CF9ACAC-CAF9-D3F4-3F02-F0FB56E7598F" name="Review" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E63B8A66-5BA8-3412-917C-06D5E10CC920" name="Review_add_infos" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
