@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="887AB91A-E9D6-A826-169F-E0DE1E1AA98F">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-13 10:33:38 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0941C030-5857-FD63-1501-E4F0B1EDF7E2" otype="Table" vid="A4807E1E-8979-626A-8896-C900FCF86940">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="739" y="126" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="24E22AC7-A74C-AF8A-C89C-7C5D01F4A612" otype="Table" vid="749B1D87-2991-12B5-1936-D5FF0854311B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="108" y="102" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B7E9D638-D11C-7F40-8AF1-251CBE80894A" otype="Table" vid="A8638DF5-CC2C-3E5B-1BAC-6CA8081CE8E3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="357" y="109" width="261" height="235"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5E459DBF-C187-7120-0CF6-EA9FD40D467F" otype="FKIndexAssociation" vid_source="A4807E1E-8979-626A-8896-C900FCF86940" vid_target="A8638DF5-CC2C-3E5B-1BAC-6CA8081CE8E3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="739" y="176"/>
+<point x="618" y="176"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5F82F026-7EF4-E90A-1D50-1F5E95CA8C5F" otype="FKIndexAssociation" vid_source="749B1D87-2991-12B5-1936-D5FF0854311B" vid_target="A8638DF5-CC2C-3E5B-1BAC-6CA8081CE8E3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="278" y="170"/>
+<point x="357" y="170"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

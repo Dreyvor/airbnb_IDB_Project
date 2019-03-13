@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0941C030-5857-FD63-1501-E4F0B1EDF7E2" name="Country">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-13 11:01:31 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="country_code" id="A2479CB1-DA62-E73C-03B2-BAB38BBC396A">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-13 11:02:35 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="19F939C7-8DE9-DE06-EBFC-5AF234B226A1">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-13 11:02:53 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FD42E47-5E5E-535B-DF1E-E6E448B23559" name="Country_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-13 11:02:35 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2479CB1-DA62-E73C-03B2-BAB38BBC396A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

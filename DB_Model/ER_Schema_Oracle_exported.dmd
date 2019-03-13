@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ER_Schema_Oracle" id="85F95CD4-B3CB-7CE4-F91A-F5F66C3142F1" version="3.5">
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ER_Schema_Oracle_exported" id="85F95CD4-B3CB-7CE4-F91A-F5F66C3142F1" version="3.5">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-13 10:33:05 UTC</createdTime>
-<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<ownerDesignName>ER_Schema_Oracle_exported</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>85F95CD4-B3CB-7CE4-F91A-F5F66C3142F1</designId>
 </OSDM_Design>

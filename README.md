@@ -14,4 +14,5 @@
 * *Cancellation_policies* (57) => pick_list ?
 * *Host_response_time* (19) => pick_list ?
 * *Host_response_rate* (20) => scala => c'est genre "92%" faudra juste garder le "92" en tant que int
-* BRAD : Share le nouveau DrawIO schema 
+* BRAD : Share le nouveau DrawIO schema
+* On a supprimé host_Id, host_name, reviewer_id et reviewer_name qui se trouveront dans la table User
