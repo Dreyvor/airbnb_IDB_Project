@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B3C9F55-789B-5DE0-6C2A-C83F5271B5C7" name="cancellation_policyPL">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:41:19 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cancellation_policy" id="26CAC17B-375B-CEAB-878E-064F04C11BA2">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:41:48 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="513E5F78-7C48-267C-05C1-91770F78A4E3" name="cancellation_policyPL_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:41:48 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26CAC17B-375B-CEAB-878E-064F04C11BA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

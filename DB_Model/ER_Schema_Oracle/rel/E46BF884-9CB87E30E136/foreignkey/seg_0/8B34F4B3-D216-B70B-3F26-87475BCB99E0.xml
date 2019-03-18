@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8B34F4B3-D216-B70B-3F26-87475BCB99E0" name="price_Listing_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:08:57 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<containerWithKeyObject>AC11731B-76A5-EE83-DB7F-5C9F11EE2B8C</containerWithKeyObject>
+<deleteRule>CASCADE</deleteRule>
+<localFKIndex>386F4359-F1AE-C117-882C-47CBCCB8CE43</localFKIndex>
+<keyObject>751694B7-9A1D-CFBB-B862-826543FDC141</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

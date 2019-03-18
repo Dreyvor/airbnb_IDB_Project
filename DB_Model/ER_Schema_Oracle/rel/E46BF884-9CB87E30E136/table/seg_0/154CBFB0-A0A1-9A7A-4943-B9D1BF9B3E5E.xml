@@ -17,7 +17,7 @@
 <delegate>46DC8C56-78AA-5C33-08DA-F9FD67C2F6F8</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="FD8D5B1F-BD66-21DF-1804-8F4AE394123C" referredColumn="46DC8C56-78AA-5C33-08DA-F9FD67C2F6F8"/>
+<colAssociation fkAssociation="FD8D5B1F-BD66-21DF-1804-8F4AE394123C" referredColumn="B53EFC5F-9ED1-6EBD-39B4-3D99D95DC2ED"/>
 </associations>
 </Column>
 <Column name="amenities_id" id="5ECBA71C-CE32-1094-268C-199A8C644116">
@@ -47,7 +47,7 @@
 <colUsage columnID="5ECBA71C-CE32-1094-268C-199A8C644116"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EE539672-C5DA-9F4B-98D7-D363FC23ED97" name="amenitiesREL_Listing_description_FK">
+<ind_PK_UK id="EE539672-C5DA-9F4B-98D7-D363FC23ED97" name="amenitiesREL_House_details_FK">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:23:15 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>

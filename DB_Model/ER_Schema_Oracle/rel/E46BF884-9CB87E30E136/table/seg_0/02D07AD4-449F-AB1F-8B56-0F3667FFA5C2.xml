@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02D07AD4-449F-AB1F-8B56-0F3667FFA5C2" name="contract_policies">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:35:31 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="listing_id" id="91D86C36-9C2F-1D7F-AD25-70FD7562E72B">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:36:17 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6A36EBE7-3E82-48ED-D565-F644814B0037</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E491B777-192E-33B7-4C89-3CC5BEC13802" referredColumn="6A36EBE7-3E82-48ED-D565-F644814B0037"/>
+</associations>
+</Column>
+<Column name="is_travel_business_ready" id="80E35514-0412-1437-195A-1EF8CE6BE37A">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:36:17 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="require_guest_profile_picture" id="56A100A7-DF51-7417-9189-736FA285BAE0">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:36:41 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="require_guest_phone_verif" id="54A25F88-3221-E63D-5834-B680E11F0531">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:37:02 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cancellation_policy" id="780E8C7F-61BA-B8D1-CF86-920AC9FC6B1F">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:42:20 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<delegate>26CAC17B-375B-CEAB-878E-064F04C11BA2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2737F75D-8AB8-65F4-1144-AF1517086E67" referredColumn="26CAC17B-375B-CEAB-878E-064F04C11BA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96EE2B9F-419E-EA04-325D-0C9B35E4F408" name="contract_policies_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:36:17 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91D86C36-9C2F-1D7F-AD25-70FD7562E72B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B35698D1-256E-89F7-E437-5DFD00ED8762" name="contract_policies_Listing_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:39:36 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91D86C36-9C2F-1D7F-AD25-70FD7562E72B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D388E871-6940-EBED-3FFF-A1A5A31452B0" name="contract_policies_cancellation_policyPL_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:42:46 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="780E8C7F-61BA-B8D1-CF86-920AC9FC6B1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

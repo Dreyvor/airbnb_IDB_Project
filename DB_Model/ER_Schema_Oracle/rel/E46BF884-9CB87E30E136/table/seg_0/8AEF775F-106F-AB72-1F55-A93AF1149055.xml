@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8AEF775F-106F-AB72-1F55-A93AF1149055" name="review_grades">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:28:42 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="listing_id" id="15055783-B25C-F358-D490-CD3EF603C95F">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:31:54 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6A36EBE7-3E82-48ED-D565-F644814B0037</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DE25E5C-E0F9-8547-4D0D-34A04BD8E852" referredColumn="6A36EBE7-3E82-48ED-D565-F644814B0037"/>
+</associations>
+</Column>
+<Column name="review_scores_rating" id="A4BC5241-7161-00F2-26D3-6161914181C5">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:31:54 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_scores_accuracy" id="9F4717BB-5095-EBC2-6BDD-4E6417394250">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:33:43 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_scores_value" id="900FD6C5-40D6-1720-DF55-11397766A1AF">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:33:43 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_scores_location" id="8DCC2291-455B-4146-E6C3-F603798C5D56">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:33:43 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_scores_communication" id="5B2EA0B9-65A3-7773-CA2F-5AACB0FF86B1">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:33:43 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_scores_checkin" id="90137264-FCD2-8EC9-4491-E6A4C05757FC">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:33:43 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_scores_clenliness" id="64787AFC-9106-0388-9117-CC6DF12ECEDF">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:33:43 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEDC9A09-1785-9F97-843F-E659B26EBC14" name="review_grades_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:31:54 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15055783-B25C-F358-D490-CD3EF603C95F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99376787-BDCF-E432-C0C1-6D93E51C6004" name="review_grades_Listing_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:34:24 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15055783-B25C-F358-D490-CD3EF603C95F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
