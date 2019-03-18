@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1334CF7A-CBDF-AC5F-CAC4-3B07214FD343" name="bed_typePL">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:19:28 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bed_type" id="4924052F-4FA2-C063-BC6B-9C265A1934AD">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:19:50 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="630E3A84-991C-71CE-92C0-91CD2EC60E22" name="bed_typePL_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:19:50 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4924052F-4FA2-C063-BC6B-9C265A1934AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

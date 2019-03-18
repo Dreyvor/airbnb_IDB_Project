@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="154CBFB0-A0A1-9A7A-4943-B9D1BF9B3E5E" name="amenitiesREL">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:20:28 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="listing_id" id="7E6423FB-EED4-67DB-CAE4-FE6F07B93835">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:21:10 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>46DC8C56-78AA-5C33-08DA-F9FD67C2F6F8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD8D5B1F-BD66-21DF-1804-8F4AE394123C" referredColumn="46DC8C56-78AA-5C33-08DA-F9FD67C2F6F8"/>
+</associations>
+</Column>
+<Column name="amenities_id" id="5ECBA71C-CE32-1094-268C-199A8C644116">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:21:28 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>80C174E0-2E7B-38A4-6B25-08E1F721E1D1</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6812E4F-5CCF-350E-D2D8-FB308CB7F0CC" referredColumn="80C174E0-2E7B-38A4-6B25-08E1F721E1D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5AE7FBAD-58D5-0E66-B74C-920CEFD0487E" name="amenitiesREL_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:21:10 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E6423FB-EED4-67DB-CAE4-FE6F07B93835"/>
+<colUsage columnID="5ECBA71C-CE32-1094-268C-199A8C644116"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE539672-C5DA-9F4B-98D7-D363FC23ED97" name="amenitiesREL_Listing_description_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:23:15 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E6423FB-EED4-67DB-CAE4-FE6F07B93835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9552BEA6-F3AC-C9AD-9DE2-A93722A45C8C" name="amenitiesREL_amenitiesPL_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:23:36 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ECBA71C-CE32-1094-268C-199A8C644116"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

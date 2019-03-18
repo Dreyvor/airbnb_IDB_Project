@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55E5AD42-34B2-8068-E1DA-07857E389C3B" name="House_details">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:09:13 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="listing_id" id="B53EFC5F-9ED1-6EBD-39B4-3D99D95DC2ED">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:09:50 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>46DC8C56-78AA-5C33-08DA-F9FD67C2F6F8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CE625A0-C2A0-23EF-8242-B774FB14FB81" referredColumn="46DC8C56-78AA-5C33-08DA-F9FD67C2F6F8"/>
+</associations>
+</Column>
+<Column name="access" id="64158F40-8C10-C40C-7D20-3B7D446EC6F3">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:10:04 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="house_rules" id="9E2AA3AF-3D48-A50A-A864-4ACCBB63D9DA">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:10:16 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bathrooms" id="554120BD-0C9C-BD7F-6D61-1437987210C1">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:10:33 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="beds" id="6F13E584-605F-D276-F1C1-6611D89B4CB0">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:10:54 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bedrooms" id="4E839F57-6E21-4CF0-57E3-CC16EFD5C4B7">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:10:54 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="square_feet" id="7E7DAAC1-A3F8-A06B-04CC-A466E8DC46AB">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:12:57 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="accommodates" id="1505D99B-FF55-E101-4817-1AEBB42135AF">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:14:55 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bed_type" id="4F47FBDC-5A52-025C-59F9-CAF192BB1254">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:16:13 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<delegate>4924052F-4FA2-C063-BC6B-9C265A1934AD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D443DD1-3230-D20A-CDB4-2F0BDCA6FE1B" referredColumn="4924052F-4FA2-C063-BC6B-9C265A1934AD"/>
+</associations>
+</Column>
+<Column name="room_type" id="48D439E3-6031-7867-4C86-EB75786EBD21">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:16:30 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<delegate>27991FA4-2CC5-F1A0-F2C8-F33C998C7C0E</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90A7E92B-76A7-0F0D-4CAD-42A2F09B9432" referredColumn="27991FA4-2CC5-F1A0-F2C8-F33C998C7C0E"/>
+</associations>
+</Column>
+<Column name="property_type" id="EB7B392A-BA21-2513-A775-02D2BB7AED06">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:16:30 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<delegate>08060200-A1A3-2428-CCEE-6D3F0D30B41A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B6CC2EE-490C-6D8B-D279-F22448BF3E5C" referredColumn="08060200-A1A3-2428-CCEE-6D3F0D30B41A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="255C5C43-9157-FF36-AEA1-5BFFD2A6C5F9" name="House_details_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:09:50 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B53EFC5F-9ED1-6EBD-39B4-3D99D95DC2ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="554A89F1-66BA-9276-B4ED-6D1C0045AF5A" name="House_details_Listing_description_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:25:10 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B53EFC5F-9ED1-6EBD-39B4-3D99D95DC2ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE0EDB73-D4F1-0464-44B7-FA6F234D2AF4" name="House_details_property_typePL_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:28:36 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB7B392A-BA21-2513-A775-02D2BB7AED06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C01BA1C8-5AF3-C2B3-7615-B1F806EF3FF4" name="House_details_room_typePL_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:28:45 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48D439E3-6031-7867-4C86-EB75786EBD21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7807AC68-5D58-FDE6-12A7-55C40B269DAC" name="House_details_bed_typePL_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 10:28:55 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F47FBDC-5A52-025C-59F9-CAF192BB1254"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
