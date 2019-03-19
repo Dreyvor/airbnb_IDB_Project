@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F18B2B62-1348-D5EE-2E82-FDC33154C40A" name="Listing description">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>B7E9D638-D11C-7F40-8AF1-251CBE80894A</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="listing id" id="1F4DD007-D0C9-E69E-1872-7CF0D5A93B52">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>2EFF2BE8-A82F-8154-CC30-87AFB3C3ABF4</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<referedAttribute>6E2D597D-6089-5DDE-2995-C4E6E71A611A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="description" id="181F3E34-85AA-E28E-B51C-377803A09FC8">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>46D5787E-0CA7-34A4-17A3-46F4D2026903</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="interaction" id="673083B5-AB75-197D-79FB-E219F521C579">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>98EEF5F4-D750-66AB-5A3B-102BB8354F64</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="picture url" id="08D2620F-B5A3-A955-9DB2-E8631D1DD989">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>7E037307-5CA6-A909-593C-001A16FE532D</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="transit" id="B67D6703-74AD-973F-4814-05EDB91F58D3">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>F15844F9-B81E-05DB-5420-25F3DF295C92</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="notes" id="A1D64057-35A1-C29C-4AB1-1C771E415136">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>0E66BCC2-50F5-308A-C7F1-567A334DB32F</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="longitude" id="679FEE13-1A90-73F6-EE48-2572110A15B6">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>9D7F51A7-858C-EFB1-8E63-92C4E474B8F7</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+</Attribute>
+<Attribute name="latitude" id="F908EF78-AF79-9538-2235-0980A749E726">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>AD91769C-8815-A60C-CC20-4AF590CA1B3C</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+</Attribute>
+<Attribute name="neighbourhood overview" id="4EBA95EE-A9C1-8F8D-D939-0C80BF838835">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>3BD7C8BB-2730-63E2-3C6E-B3481A4FE27E</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C1C34C3E-D65C-AEDF-DB51-C007E82A9626" name="Listing description PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>C9B2DFED-F5E9-773E-DA33-F25E47EC53CB</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1F4DD007-D0C9-E69E-1872-7CF0D5A93B52</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

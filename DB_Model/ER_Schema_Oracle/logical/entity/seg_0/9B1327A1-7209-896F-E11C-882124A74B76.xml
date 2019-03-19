@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B1327A1-7209-896F-E11C-882124A74B76" name="Listing">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>24E22AC7-A74C-AF8A-C89C-7C5D01F4A612</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="6E2D597D-6089-5DDE-2995-C4E6E71A611A">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>6A36EBE7-3E82-48ED-D565-F644814B0037</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="01165496-4A16-B854-A2B4-B77D036E6CBF">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>8761003F-A2F9-9012-0327-63F06D8F9F42</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="listing url" id="7F5E839D-D57C-8EE8-3122-FCB850FA3E4D">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>B7DE6178-81F0-0B91-841E-5A5DD1E6B847</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="summary" id="142412D0-BC91-F1AE-D505-3284D6B6C85D">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>4C785647-30A5-E3C1-A388-9EF066C68470</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="space" id="5A2AC148-9C60-F8B5-20E3-5CDBDF634576">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>DB09E3C1-3A39-B934-5168-E968C6423D52</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="neighbourhood id" id="9F42654F-2AEC-FB70-4BD8-0234BA5F36B9">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>0F3D9FA6-B110-79BD-B12D-A1F52BF856BA</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<referedAttribute>B9363522-3EEB-4ECB-76B0-791FCACF6B51</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="host id" id="AE429F99-BC05-76F3-300F-7AEA3FEEB159">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>0F537BF4-13B0-B2DF-2583-DA76620949D7</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<referedAttribute>DDE9EC66-1108-6187-F6F8-FD42C77E6102</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="162517B1-C6FC-49C0-BFF2-F70768720F9E" name="Listing PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>751694B7-9A1D-CFBB-B862-826543FDC141</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E2D597D-6089-5DDE-2995-C4E6E71A611A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

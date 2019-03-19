@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="16C7F872-EBAC-0B2E-8DBD-68BE918F3BAC" name="user">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>9C28EDDB-5396-2BD6-BB07-0FDDC33904CA</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user id" id="D760872F-8F1F-53F9-0B5A-0C4BAA3A004F">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>7A2E4F23-D84F-11AE-9BA8-A7A6F2A2D5D2</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="user name" id="3C04F299-CD15-7517-A923-2224B8EF2500">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>2FFE7854-AB9A-9ECB-E845-7E53890BC0B9</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A5EE8180-F3C6-628B-2C98-1470F3B16F0D" name="user PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>5B641EE0-E54D-7FEC-0FB1-100000F53DDC</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D760872F-8F1F-53F9-0B5A-0C4BAA3A004F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

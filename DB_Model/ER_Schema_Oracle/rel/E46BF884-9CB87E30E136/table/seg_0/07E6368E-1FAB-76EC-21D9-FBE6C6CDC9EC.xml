@@ -57,7 +57,7 @@
 <colUsage columnID="AFA8956B-2265-66BD-4E2F-BAACB5930621"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7DF90712-3E6E-830F-399C-ED3BE3E2C33C" name="host_verificationsREL_host_verifications_FK">
+<ind_PK_UK id="7DF90712-3E6E-830F-399C-ED3BE3E2C33C" name="host_verifREL_host_verif_FK">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-19 17:31:18 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="host_verificationsREL" directorySegmentName="seg_0" id="B3E03880-165D-3D39-A8BA-99A798EC5E5C">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>07E6368E-1FAB-76EC-21D9-FBE6C6CDC9EC</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A3188C4E-8311-7D00-38E0-084462C9E7F4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2CF9A03E-D4AF-8492-47AB-B9337C79A27D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

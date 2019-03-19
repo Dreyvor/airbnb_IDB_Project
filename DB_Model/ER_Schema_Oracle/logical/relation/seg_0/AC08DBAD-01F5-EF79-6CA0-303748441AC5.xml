@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="House_details_room_typePL_FK" directorySegmentName="seg_0" id="AC08DBAD-01F5-EF79-6CA0-303748441AC5">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:50:04 UTC</createdTime>
+<generatorID>90A7E92B-76A7-0F0D-4CAD-42A2F09B9432</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<sourcePk>D006CEEE-339D-E555-9D3A-F7828EE7C169</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8A8AC8D3-4532-DB23-FF07-88779AD441CE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>757780E6-6017-B856-9B16-CD96B20C929F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

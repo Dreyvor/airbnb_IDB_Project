@@ -86,7 +86,7 @@
 <colUsage columnID="91D86C36-9C2F-1D7F-AD25-70FD7562E72B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D388E871-6940-EBED-3FFF-A1A5A31452B0" name="contract_policies_cancellation_policyPL_FK">
+<ind_PK_UK id="D388E871-6940-EBED-3FFF-A1A5A31452B0" name="contract_pol_cancel_policy_FK">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:42:46 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>

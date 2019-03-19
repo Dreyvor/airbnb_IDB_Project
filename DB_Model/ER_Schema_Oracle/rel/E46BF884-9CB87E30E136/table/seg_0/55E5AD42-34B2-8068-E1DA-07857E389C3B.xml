@@ -145,7 +145,7 @@
 <colUsage columnID="B53EFC5F-9ED1-6EBD-39B4-3D99D95DC2ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="554A89F1-66BA-9276-B4ED-6D1C0045AF5A" name="House_details_Listing_description_FK">
+<ind_PK_UK id="554A89F1-66BA-9276-B4ED-6D1C0045AF5A" name="House_details_Listing_descr_FK">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:25:10 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
@@ -155,7 +155,7 @@
 <colUsage columnID="B53EFC5F-9ED1-6EBD-39B4-3D99D95DC2ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DE0EDB73-D4F1-0464-44B7-FA6F234D2AF4" name="House_details_property_typePL_FK">
+<ind_PK_UK id="DE0EDB73-D4F1-0464-44B7-FA6F234D2AF4" name="House_details_property_type_FK">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:28:36 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
