@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF8B1582-6A08-0C87-1D08-7B7BF431844A" name="host_response_timePL">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:20:35 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="host_response_time" id="F714C023-BA61-8206-8097-9A129C08E77D">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:20:59 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75C80B32-0347-28C1-6077-39433E0CCC14" name="host_response_timePL_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:20:59 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F714C023-BA61-8206-8097-9A129C08E77D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

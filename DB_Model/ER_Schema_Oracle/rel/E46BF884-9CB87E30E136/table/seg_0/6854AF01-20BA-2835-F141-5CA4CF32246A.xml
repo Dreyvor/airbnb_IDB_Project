@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6854AF01-20BA-2835-F141-5CA4CF32246A" name="review_comments">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:37:30 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="review_id" id="26873013-34A9-AF50-0868-76311212895F">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:38:38 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="listing_id" id="D76C0F73-A620-ECA1-B4F4-696F3FBD9AF2">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:38:13 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6A36EBE7-3E82-48ED-D565-F644814B0037</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B07131C8-F86D-6881-876E-4907BDAA37FD" referredColumn="6A36EBE7-3E82-48ED-D565-F644814B0037"/>
+</associations>
+</Column>
+<Column name="date" id="E4BD2AC9-B47E-F5BE-5A1E-1FF798A98B8E">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:39:27 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="3CE96CDE-08BF-6E6A-F88A-6C58CE552670">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:39:39 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="8087D0BC-32CD-A86E-0F6A-BB844E32A1A3">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:40:13 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>7A2E4F23-D84F-11AE-9BA8-A7A6F2A2D5D2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFD38374-97FE-5A86-95AD-1CA730192020" referredColumn="7A2E4F23-D84F-11AE-9BA8-A7A6F2A2D5D2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89E0810C-325B-C406-AE88-E56D66672DA9" name="review_comments_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:39:27 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26873013-34A9-AF50-0868-76311212895F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B651326-C1C1-92BF-B43E-B349F527F87A" name="review_comments_Listing_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:39:51 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D76C0F73-A620-ECA1-B4F4-696F3FBD9AF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4B0E6B7-B497-70A7-DD48-0AF03336E9ED" name="review_comments_user_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:40:22 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8087D0BC-32CD-A86E-0F6A-BB844E32A1A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

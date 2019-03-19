@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C28EDDB-5396-2BD6-BB07-0FDDC33904CA" name="user">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:35:42 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="7A2E4F23-D84F-11AE-9BA8-A7A6F2A2D5D2">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:36:03 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_name" id="2FFE7854-AB9A-9ECB-E845-7E53890BC0B9">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:36:13 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B641EE0-E54D-7FEC-0FB1-100000F53DDC" name="user_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:36:03 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A2E4F23-D84F-11AE-9BA8-A7A6F2A2D5D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

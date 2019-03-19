@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FFD38374-97FE-5A86-95AD-1CA730192020" name="review_comments_user_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:40:22 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<containerWithKeyObject>6854AF01-20BA-2835-F141-5CA4CF32246A</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>C4B0E6B7-B497-70A7-DD48-0AF03336E9ED</localFKIndex>
+<keyObject>5B641EE0-E54D-7FEC-0FB1-100000F53DDC</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

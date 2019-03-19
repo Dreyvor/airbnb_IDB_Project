@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B694251-F331-9857-756B-F01D17384928" name="host_verifications">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:29:50 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="host_verifications_id" id="1B0E6579-60F4-1344-1F72-90AE2009CB7B">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:30:38 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="host_verifications" id="FE161AD4-FEC7-34C9-5C8B-FA34544313A7">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:30:57 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D071F398-F4DE-26F6-8A47-BAC2089F196C" name="host_verifications_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:30:38 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B0E6579-60F4-1344-1F72-90AE2009CB7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

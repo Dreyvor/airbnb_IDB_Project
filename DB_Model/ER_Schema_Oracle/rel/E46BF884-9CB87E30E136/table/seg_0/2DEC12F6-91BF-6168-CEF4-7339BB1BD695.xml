@@ -1,63 +1,66 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5DB25EF7-C593-B560-1305-737C0BB45ED1" name="neighbourhoodPL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DEC12F6-91BF-6168-CEF4-7339BB1BD695" name="cityPL">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:44:09 UTC</createdTime>
+<createdTime>2019-03-19 17:04:01 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="neighbourhood_id" id="75F85755-9C8F-E99F-217E-939536FB0979">
+<Column name="city_id" id="8914855C-F0BA-FB01-B7ED-57A5B6D69ACF">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:45:49 UTC</createdTime>
+<createdTime>2019-03-19 17:04:38 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="neighbourhood" id="3E4944ED-07C5-3309-41F5-0FE15E77BB08">
+<Column name="city" id="984162D2-4F7D-840E-DD6E-D21AD21D125F">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:46:03 UTC</createdTime>
+<createdTime>2019-03-19 17:04:38 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="city_id" id="42F748A4-607F-5ED5-E23F-17588140C467">
+<Column name="country_code" id="D873F295-240D-40C4-C0E2-F62FA7B20423">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-19 17:07:35 UTC</createdTime>
+<createdTime>2019-03-19 17:08:16 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>8914855C-F0BA-FB01-B7ED-57A5B6D69ACF</delegate>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<delegate>A2479CB1-DA62-E73C-03B2-BAB38BBC396A</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A144D1F4-C4D4-B726-FD93-B940B4846FED" referredColumn="8914855C-F0BA-FB01-B7ED-57A5B6D69ACF"/>
+<colAssociation fkAssociation="5166D532-4A6E-C39A-23BC-AE1C78E3ACAD" referredColumn="A2479CB1-DA62-E73C-03B2-BAB38BBC396A"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="BB6B31E6-6169-4B74-3203-D066A3D0E6B1" name="neighbourhoodPL_PK">
+<ind_PK_UK id="FDAFBAF6-4A2C-6210-1E08-B488A499C4D3" name="cityPL_PK">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:45:49 UTC</createdTime>
+<createdTime>2019-03-19 17:04:38 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="75F85755-9C8F-E99F-217E-939536FB0979"/>
+<colUsage columnID="8914855C-F0BA-FB01-B7ED-57A5B6D69ACF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D5A46B0C-33E8-B15F-6AB6-0CEF25B978F6" name="neighbourhoodPL_cityPL_FK">
+<ind_PK_UK id="7824D204-4320-157D-019F-2F381163C576" name="cityPL_Country_FK">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-19 17:07:51 UTC</createdTime>
+<createdTime>2019-03-19 17:08:28 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="42F748A4-607F-5ED5-E23F-17588140C467"/>
+<colUsage columnID="D873F295-240D-40C4-C0E2-F62FA7B20423"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

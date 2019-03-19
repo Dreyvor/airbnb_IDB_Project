@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07E6368E-1FAB-76EC-21D9-FBE6C6CDC9EC" name="host_verificationsREL">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:27:38 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<isEngineerToRelation>true</isEngineerToRelation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="host_id" id="AFA8956B-2265-66BD-4E2F-BAACB5930621">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:28:23 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B9C42D21-E68B-1935-DEBC-32CD692EC039</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AB67E9D-7F4B-3523-039E-C7544FBFAA67" referredColumn="B9C42D21-E68B-1935-DEBC-32CD692EC039"/>
+</associations>
+</Column>
+<Column name="host_verification_id" id="4C2FBF7B-857F-AD66-66F4-EDF184BF501B">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:28:42 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1B0E6579-60F4-1344-1F72-90AE2009CB7B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E149B60A-B43A-6BAE-D764-EE24BBFF3659" referredColumn="1B0E6579-60F4-1344-1F72-90AE2009CB7B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6EC703F-A0BE-9E80-E43C-B51DDFAC3D91" name="host_verificationsREL_PK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:28:23 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFA8956B-2265-66BD-4E2F-BAACB5930621"/>
+<colUsage columnID="4C2FBF7B-857F-AD66-66F4-EDF184BF501B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECBE5CEE-8908-B447-6681-E025FBBB0CA3" name="host_verificationsREL_Host_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:28:52 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFA8956B-2265-66BD-4E2F-BAACB5930621"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DF90712-3E6E-830F-399C-ED3BE3E2C33C" name="host_verificationsREL_host_verifications_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:31:18 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C2FBF7B-857F-AD66-66F4-EDF184BF501B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

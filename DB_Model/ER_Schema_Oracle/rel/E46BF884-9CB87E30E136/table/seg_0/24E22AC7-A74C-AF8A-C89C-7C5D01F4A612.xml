@@ -54,6 +54,32 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="neighbourhood_id" id="8958E9DF-B9B7-6C35-D047-9A645D78C1DB">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:05:54 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>75F85755-9C8F-E99F-217E-939536FB0979</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3646A9D7-B621-091B-B6B4-B3D00D516DB0" referredColumn="75F85755-9C8F-E99F-217E-939536FB0979"/>
+</associations>
+</Column>
+<Column name="host_id" id="A7901A21-E85A-1319-CD26-FAD4CB78CB95">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:33:25 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B9C42D21-E68B-1935-DEBC-32CD692EC039</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="227510A4-0982-8AE1-E8C5-BA55EFFD4AC3" referredColumn="B9C42D21-E68B-1935-DEBC-32CD692EC039"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="751694B7-9A1D-CFBB-B862-826543FDC141" name="Listing_PK">
@@ -65,6 +91,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6A36EBE7-3E82-48ED-D565-F644814B0037"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECF67603-24B1-640B-1CA1-62E1D83E8AEC" name="Listing_neighbourhoodPL_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:06:15 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8958E9DF-B9B7-6C35-D047-9A645D78C1DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83117342-3736-CA98-AE86-9F87B7BC3739" name="Listing_Host_FK">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-19 17:33:35 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7901A21-E85A-1319-CD26-FAD4CB78CB95"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
