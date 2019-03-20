@@ -9,12 +9,12 @@
 </engineerTo>
 <sourcePk>162517B1-C6FC-49C0-BFF2-F70768720F9E</sourcePk>
 <identifying>false</identifying>
-<optionalSource>true</optionalSource>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>9B1327A1-7209-896F-E11C-882124A74B76</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>F87C4298-C852-F118-03CC-26DE3AFED432</targetEntity>
 <transferable>true</transferable>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 </Relation>

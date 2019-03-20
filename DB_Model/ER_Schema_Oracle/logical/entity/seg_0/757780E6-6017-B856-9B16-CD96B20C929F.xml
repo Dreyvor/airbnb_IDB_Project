@@ -67,6 +67,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 </Attribute>
 <Attribute name="beds" id="68BD9A6A-9AE6-F648-FAF2-4B7B9C25F4D0">
 <createdBy>brad</createdBy>
@@ -115,7 +116,6 @@
 <engineerTo>
 <item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

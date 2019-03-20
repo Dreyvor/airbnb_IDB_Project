@@ -42,7 +42,6 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-19 17:39:39 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

@@ -133,6 +133,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 </Attribute>
+<Attribute name="access" id="753766A7-CD35-FF6E-B407-3F3994B7D914">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-20 10:38:18 UTC</createdTime>
+<generatorID>BD506566-22B0-5DFA-43C8-5434CF51133E</generatorID>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<engineerTo>
+<item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C1C34C3E-D65C-AEDF-DB51-C007E82A9626" name="Listing description PK">

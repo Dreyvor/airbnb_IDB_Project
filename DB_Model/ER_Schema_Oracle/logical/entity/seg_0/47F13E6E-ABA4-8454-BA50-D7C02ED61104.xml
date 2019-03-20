@@ -107,7 +107,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="review scores clenliness" id="34C3A5E6-7789-9B60-9ABE-C8860C773A9D">
+<Attribute name="review scores cleanliness" id="34C3A5E6-7789-9B60-9ABE-C8860C773A9D">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-19 17:50:04 UTC</createdTime>
 <generatorID>64787AFC-9106-0388-9117-CC6DF12ECEDF</generatorID>

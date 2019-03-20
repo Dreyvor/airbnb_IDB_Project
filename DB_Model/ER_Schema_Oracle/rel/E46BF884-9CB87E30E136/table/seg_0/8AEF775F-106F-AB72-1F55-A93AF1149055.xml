@@ -79,7 +79,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="review_scores_clenliness" id="64787AFC-9106-0388-9117-CC6DF12ECEDF">
+<Column name="review_scores_cleanliness" id="64787AFC-9106-0388-9117-CC6DF12ECEDF">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:33:43 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>

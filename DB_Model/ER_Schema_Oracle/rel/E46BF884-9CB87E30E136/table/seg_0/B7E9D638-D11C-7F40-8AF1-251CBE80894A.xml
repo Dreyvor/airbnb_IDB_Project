@@ -30,9 +30,9 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="interaction" id="98EEF5F4-D750-66AB-5A3B-102BB8354F64">
+<Column name="neighbourhood_overview" id="3BD7C8BB-2730-63E2-3C6E-B3481A4FE27E">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-13 10:50:43 UTC</createdTime>
+<createdTime>2019-03-13 11:00:52 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -40,9 +40,9 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="picture_url" id="7E037307-5CA6-A909-593C-001A16FE532D">
+<Column name="notes" id="0E66BCC2-50F5-308A-C7F1-567A334DB32F">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-13 10:51:14 UTC</createdTime>
+<createdTime>2019-03-13 10:51:48 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,9 +60,29 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="notes" id="0E66BCC2-50F5-308A-C7F1-567A334DB32F">
+<Column name="access" id="BD506566-22B0-5DFA-43C8-5434CF51133E">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-13 10:51:48 UTC</createdTime>
+<createdTime>2019-03-20 09:32:17 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="interaction" id="98EEF5F4-D750-66AB-5A3B-102BB8354F64">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-13 10:50:43 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="picture_url" id="7E037307-5CA6-A909-593C-001A16FE532D">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-13 10:51:14 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -88,16 +108,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <dataTypePrecision>12</dataTypePrecision>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="neighbourhood_overview" id="3BD7C8BB-2730-63E2-3C6E-B3481A4FE27E">
-<createdBy>brad</createdBy>
-<createdTime>2019-03-13 11:00:52 UTC</createdTime>
-<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

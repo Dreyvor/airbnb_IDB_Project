@@ -20,16 +20,6 @@
 <colAssociation fkAssociation="2CE625A0-C2A0-23EF-8242-B774FB14FB81" referredColumn="46DC8C56-78AA-5C33-08DA-F9FD67C2F6F8"/>
 </associations>
 </Column>
-<Column name="access" id="64158F40-8C10-C40C-7D20-3B7D446EC6F3">
-<createdBy>brad</createdBy>
-<createdTime>2019-03-18 10:10:04 UTC</createdTime>
-<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="house_rules" id="9E2AA3AF-3D48-A50A-A864-4ACCBB63D9DA">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:10:16 UTC</createdTime>
@@ -48,6 +38,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="beds" id="6F13E584-605F-D276-F1C1-6611D89B4CB0">
@@ -84,7 +75,6 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:14:55 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

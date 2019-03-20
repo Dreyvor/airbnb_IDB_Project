@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="House_details_Listing_description_FK" directorySegmentName="seg_0" id="308A457B-97D0-729A-C22E-09DF8616A35D">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="House details Listing descr FK" directorySegmentName="seg_0" id="308A457B-97D0-729A-C22E-09DF8616A35D">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-19 17:50:04 UTC</createdTime>
 <generatorID>2CE625A0-C2A0-23EF-8242-B774FB14FB81</generatorID>
@@ -10,12 +10,12 @@
 <sourcePk>C1C34C3E-D65C-AEDF-DB51-C007E82A9626</sourcePk>
 <dominantRole>F18B2B62-1348-D5EE-2E82-FDC33154C40A</dominantRole>
 <identifying>true</identifying>
-<optionalSource>true</optionalSource>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>F18B2B62-1348-D5EE-2E82-FDC33154C40A</sourceEntity>
 <targetCardinalityString>1</targetCardinalityString>
 <targetEntity>757780E6-6017-B856-9B16-CD96B20C929F</targetEntity>
 <transferable>true</transferable>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 </Relation>

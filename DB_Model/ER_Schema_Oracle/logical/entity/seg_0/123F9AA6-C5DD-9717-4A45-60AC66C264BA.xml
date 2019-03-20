@@ -41,6 +41,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 </Attribute>
 <Attribute name="weekly price" id="2A39ADDA-66CC-5613-E214-CFF4D2A9AF7A">
 <createdBy>brad</createdBy>
@@ -54,6 +55,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 </Attribute>
 <Attribute name="price" id="31A23FC7-3B57-6978-934D-E607361E946B">
 <createdBy>brad</createdBy>
@@ -63,10 +65,10 @@
 <engineerTo>
 <item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 </Attribute>
 <Attribute name="cleaning fee" id="FCC1028E-2D82-41F1-A54B-253290895AEA">
 <createdBy>brad</createdBy>
@@ -80,6 +82,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 </Attribute>
 <Attribute name="security deposit" id="85ABA81E-25CB-51DA-8B7E-A831828000BA">
 <createdBy>brad</createdBy>
@@ -93,6 +96,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 </Attribute>
 <Attribute name="guest included" id="C906CA88-5571-2B47-BA86-968DC31934F7">
 <createdBy>brad</createdBy>
@@ -102,7 +106,6 @@
 <engineerTo>
 <item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -115,10 +118,10 @@
 <engineerTo>
 <item key="E46BF884-ACC3-8CB0-9C5C-9CB87E30E136" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 </Attribute>
 <Attribute name="minimum nights" id="3C56D4ED-8FBD-FEF1-CDFA-F33A20C0DAED">
 <createdBy>brad</createdBy>

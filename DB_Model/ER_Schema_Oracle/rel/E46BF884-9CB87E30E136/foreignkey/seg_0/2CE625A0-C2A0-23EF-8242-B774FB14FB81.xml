@@ -4,7 +4,7 @@
 <createdTime>2019-03-18 10:25:10 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <containerWithKeyObject>55E5AD42-34B2-8068-E1DA-07857E389C3B</containerWithKeyObject>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <localFKIndex>554A89F1-66BA-9276-B4ED-6D1C0045AF5A</localFKIndex>
 <keyObject>C9B2DFED-F5E9-773E-DA33-F25E47EC53CB</keyObject>
 <mandatory>true</mandatory>

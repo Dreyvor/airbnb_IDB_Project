@@ -56,7 +56,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>25</dataTypeSize>
+<dataTypeSize>30</dataTypeSize>
 <delegate>26CAC17B-375B-CEAB-878E-064F04C11BA2</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

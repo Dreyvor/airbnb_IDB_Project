@@ -19,14 +19,14 @@
 <colAssociation fkAssociation="8B34F4B3-D216-B70B-3F26-87475BCB99E0" referredColumn="6A36EBE7-3E82-48ED-D565-F644814B0037"/>
 </associations>
 </Column>
-<Column name="monthly_price" id="60461FF1-9FFA-0D01-6D1E-5617C93784DC">
+<Column name="price" id="57CE4E61-B251-C823-64C9-F20B6D5BF5A8">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:11:23 UTC</createdTime>
+<createdTime>2019-03-18 12:15:15 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="weekly_price" id="3E61BCBC-A22C-AB96-D04A-53B6D384426A">
@@ -37,26 +37,18 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="price" id="57CE4E61-B251-C823-64C9-F20B6D5BF5A8">
+<Column name="monthly_price" id="60461FF1-9FFA-0D01-6D1E-5617C93784DC">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:15:15 UTC</createdTime>
+<createdTime>2019-03-18 12:11:23 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="cleaning_fee" id="EDF629BF-13BF-3D40-3E49-E48EBA89ED0E">
-<createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:15:15 UTC</createdTime>
-<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="security_deposit" id="914BF9EB-153D-1FCA-2C9E-10657B097324">
@@ -67,13 +59,24 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cleaning_fee" id="EDF629BF-13BF-3D40-3E49-E48EBA89ED0E">
+<createdBy>brad</createdBy>
+<createdTime>2019-03-18 12:15:15 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="guest_included" id="AEDA784B-74EA-1893-85B4-956CD9BB1BBD">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:16:28 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -83,10 +86,10 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:17:03 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="minimum_nights" id="30C2521D-4358-0639-16D0-559611F31C5E">

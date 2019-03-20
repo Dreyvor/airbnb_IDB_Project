@@ -13,7 +13,7 @@
    <object objectType="Table" objectID="2DEC12F6-91BF-6168-CEF4-7339BB1BD695" name="cityPL" seqName="seg_0"/>
    <object objectType="Table" objectID="02D07AD4-449F-AB1F-8B56-0F3667FFA5C2" name="contract_policies" seqName="seg_0"/>
    <object objectType="Table" objectID="CF8B1582-6A08-0C87-1D08-7B7BF431844A" name="host_response_timePL" seqName="seg_0"/>
-   <object objectType="Table" objectID="7B694251-F331-9857-756B-F01D17384928" name="host_verifications" seqName="seg_0"/>
+   <object objectType="Table" objectID="7B694251-F331-9857-756B-F01D17384928" name="host_verificationsPL" seqName="seg_0"/>
    <object objectType="Table" objectID="07E6368E-1FAB-76EC-21D9-FBE6C6CDC9EC" name="host_verificationsREL" seqName="seg_0"/>
    <object objectType="Table" objectID="5DB25EF7-C593-B560-1305-737C0BB45ED1" name="neighbourhoodPL" seqName="seg_0"/>
    <object objectType="Table" objectID="AC11731B-76A5-EE83-DB7F-5C9F11EE2B8C" name="price" seqName="seg_0"/>
@@ -36,10 +36,10 @@
    <object objectType="FKIndexAssociation" objectID="B6812E4F-5CCF-350E-D2D8-FB308CB7F0CC" name="amenitiesREL_amenitiesPL_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="74E264F9-EFE9-334E-EF30-2C9520980AAF" name="calendar_Listing_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="5166D532-4A6E-C39A-23BC-AE1C78E3ACAD" name="cityPL_Country_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="E491B777-192E-33B7-4C89-3CC5BEC13802" name="contract_policies_Listing_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="2737F75D-8AB8-65F4-1144-AF1517086E67" name="contract_pol_cancel_policy_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="2AB67E9D-7F4B-3523-039E-C7544FBFAA67" name="host_verificationsREL_Host_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E491B777-192E-33B7-4C89-3CC5BEC13802" name="contract_policies_Listing_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="E149B60A-B43A-6BAE-D764-EE24BBFF3659" name="host_verifREL_host_verif_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2AB67E9D-7F4B-3523-039E-C7544FBFAA67" name="host_verificationsREL_Host_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="A144D1F4-C4D4-B726-FD93-B940B4846FED" name="neighbourhoodPL_cityPL_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="8B34F4B3-D216-B70B-3F26-87475BCB99E0" name="price_Listing_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="B07131C8-F86D-6881-876E-4907BDAA37FD" name="review_comments_Listing_FK" seqName="seg_0"/>

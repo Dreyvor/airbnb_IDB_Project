@@ -1,0 +1,10 @@
+TODO BRAD:
+check relation ternaire
+
+INFOS pour le rapport:
+On a mis le host_name (16) et le host_id(14) Reviewer_id et reviewer_name dans le user_name et le user_id parce qu'on a une relation ISA entre Host, reviewer qui sont des users
+host_response_time (19): charger les données comme étant des string et mettre une string par défaut si les données sont "N/A"
+host_response_rate (20): charger les données comme étant des nombres (transformer le  "XX%" en integer "XX") en transformant les "N/A" en null
+host_verifications(24): on va créer une picklist en séparant les différentes string donnée dans les *.csv
+Pour le schema relationnel, on a supprimé l'entité "Reviewers" car elle n'a pas d'attributs et on a fait une Foreign key dans "Review comments" directement sur la table "User"
+décrire la transistion ERM -> relationnel pour la relation ternaire

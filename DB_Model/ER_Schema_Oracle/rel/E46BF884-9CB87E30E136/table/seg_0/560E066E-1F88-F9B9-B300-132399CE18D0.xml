@@ -44,8 +44,8 @@
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>47</dataTypeSize>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>48</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="host_response_rate" id="E0D818FD-970A-2121-5FD4-B0E45A4F3166">
@@ -97,7 +97,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
+<dataTypeSize>20</dataTypeSize>
 <delegate>F714C023-BA61-8206-8097-9A129C08E77D</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

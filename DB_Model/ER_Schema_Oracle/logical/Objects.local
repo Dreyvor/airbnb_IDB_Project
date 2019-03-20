@@ -12,7 +12,7 @@
    <object objectType="Entity" objectID="762F3233-4827-2AA5-0189-043CE025A94C" name="cityPL" seqName="seg_0"/>
    <object objectType="Entity" objectID="C3428A28-1ED0-4A47-222F-E9B2C057ACBE" name="contract policies" seqName="seg_0"/>
    <object objectType="Entity" objectID="4FCC2BB6-E68D-7F5E-4759-6470F37CD409" name="host response timePL" seqName="seg_0"/>
-   <object objectType="Entity" objectID="2CF9A03E-D4AF-8492-47AB-B9337C79A27D" name="host verifications" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2CF9A03E-D4AF-8492-47AB-B9337C79A27D" name="host verificationsPL" seqName="seg_0"/>
    <object objectType="Entity" objectID="8C71C9DF-D94A-8A6C-258B-61BF7FC852F3" name="neighbourhoodPL" seqName="seg_0"/>
    <object objectType="Entity" objectID="123F9AA6-C5DD-9717-4A45-60AC66C264BA" name="price" seqName="seg_0"/>
    <object objectType="Entity" objectID="988D5400-1382-26CA-3142-425C39FBBE70" name="property typePL" seqName="seg_0"/>
@@ -23,9 +23,9 @@
    <object objectType="Relation" objectID="4DC572DA-8185-1082-0132-4A8A9F70D76D" name="Host_host_response_timePL_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="D99148DE-E7FC-B4EC-D648-B32711033C50" name="Host_neighbourhoodPL_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="30A67128-2A10-832A-5D6D-68C1E1A2E773" name="Host_user_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="308A457B-97D0-729A-C22E-09DF8616A35D" name="House_details_Listing_description_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="308A457B-97D0-729A-C22E-09DF8616A35D" name="House details Listing descr FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8590ADC4-6816-1728-EBC9-8FB5DCCAB0EE" name="House details property type FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="2A215B34-C6F0-F999-7842-477286C3CF44" name="House_details_bed_typePL_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="8590ADC4-6816-1728-EBC9-8FB5DCCAB0EE" name="House_details_property_typePL_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="AC08DBAD-01F5-EF79-6CA0-303748441AC5" name="House_details_room_typePL_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="0F537BF4-13B0-B2DF-2583-DA76620949D7" name="Listing_Host_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="2EFF2BE8-A82F-8154-CC30-87AFB3C3ABF4" name="Listing_description_Listing_FK" seqName="seg_0"/>
@@ -33,8 +33,8 @@
    <object objectType="Relation" objectID="8F011F40-F6D0-0C40-FE6C-39915D071F73" name="amenitiesREL" seqName="seg_0"/>
    <object objectType="Relation" objectID="07AF1461-29C3-0344-A77C-3AA55B34EF34" name="calendar_Listing_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="B90A6180-F5CB-9151-EF1F-C660606E0E9B" name="cityPL_Country_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3CBB3125-77BB-9FD7-81EA-1789EDAFD47D" name="contract pol cancel policy FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="95DD6727-FA28-A15C-1B95-3D350626FEEF" name="contract_policies_Listing_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="3CBB3125-77BB-9FD7-81EA-1789EDAFD47D" name="contract_policies_cancellation_policyPL_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="B3E03880-165D-3D39-A8BA-99A798EC5E5C" name="host_verificationsREL" seqName="seg_0"/>
    <object objectType="Relation" objectID="012F5302-8A8D-0D9C-AB35-5947548BE1BD" name="neighbourhoodPL_cityPL_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="E027538B-A79E-EC47-1DC3-80FFEB73D29D" name="price_Listing_FK" seqName="seg_0"/>
