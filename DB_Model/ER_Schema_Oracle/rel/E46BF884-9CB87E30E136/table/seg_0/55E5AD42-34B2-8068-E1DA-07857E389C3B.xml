@@ -27,7 +27,7 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="bathrooms" id="554120BD-0C9C-BD7F-6D61-1437987210C1">
@@ -135,13 +135,6 @@
 <colUsage columnID="B53EFC5F-9ED1-6EBD-39B4-3D99D95DC2ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="554A89F1-66BA-9276-B4ED-6D1C0045AF5A" name="House_details_Listing_FK">
-<createdBy>brad</createdBy>
-<createdTime>2019-03-18 10:25:10 UTC</createdTime>
-<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-</ind_PK_UK>
 <ind_PK_UK id="DE0EDB73-D4F1-0464-44B7-FA6F234D2AF4" name="House_details_property_type_FK">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:28:36 UTC</createdTime>
@@ -172,7 +165,7 @@
 <colUsage columnID="4F47FBDC-5A52-025C-59F9-CAF192BB1254"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D6448E99-2524-AA93-7D7C-4A76DC42A093" name="House_details_Listing_FKv2">
+<ind_PK_UK id="D6448E99-2524-AA93-7D7C-4A76DC42A093" name="House_details_Listing_FK">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-23 10:06:35 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
