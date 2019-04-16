@@ -13,8 +13,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<autoIncrementColumn>true</autoIncrementColumn>
-<identityColumn>true</identityColumn>
 <autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

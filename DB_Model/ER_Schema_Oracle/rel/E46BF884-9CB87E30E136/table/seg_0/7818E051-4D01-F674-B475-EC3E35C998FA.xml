@@ -7,6 +7,15 @@
 <isEngineerToRelation>true</isEngineerToRelation>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="room_type_id" id="8D90B007-318C-85C7-DD91-10C58FB28088">
+<createdBy>brad</createdBy>
+<createdTime>2019-04-16 12:54:13 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="room_type" id="27991FA4-2CC5-F1A0-F2C8-F33C998C7C0E">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:19:22 UTC</createdTime>
@@ -27,7 +36,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="27991FA4-2CC5-F1A0-F2C8-F33C998C7C0E"/>
+<colUsage columnID="8D90B007-318C-85C7-DD91-10C58FB28088"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

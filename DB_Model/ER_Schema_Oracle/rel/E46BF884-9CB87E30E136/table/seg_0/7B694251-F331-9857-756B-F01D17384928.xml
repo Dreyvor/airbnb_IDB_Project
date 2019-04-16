@@ -13,8 +13,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<autoIncrementColumn>true</autoIncrementColumn>
-<identityColumn>true</identityColumn>
 <autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -24,7 +22,8 @@
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

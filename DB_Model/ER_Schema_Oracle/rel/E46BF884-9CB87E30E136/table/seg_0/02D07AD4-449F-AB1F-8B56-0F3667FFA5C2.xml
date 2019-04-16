@@ -49,18 +49,18 @@
 <dataTypeSize>1</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cancellation_policy" id="780E8C7F-61BA-B8D1-CF86-920AC9FC6B1F">
+<Column name="cancellation_policy" id="40A00360-1B77-B444-E77B-65223075132E">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 12:42:20 UTC</createdTime>
+<createdTime>2019-04-16 12:39:32 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<delegate>26CAC17B-375B-CEAB-878E-064F04C11BA2</delegate>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>7E824DCB-3F4B-20A0-EF4E-8BC7CDEE7FA0</delegate>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="2737F75D-8AB8-65F4-1144-AF1517086E67" referredColumn="26CAC17B-375B-CEAB-878E-064F04C11BA2"/>
+<colAssociation fkAssociation="2737F75D-8AB8-65F4-1144-AF1517086E67" referredColumn="7E824DCB-3F4B-20A0-EF4E-8BC7CDEE7FA0"/>
 </associations>
 </Column>
 </columns>
@@ -93,7 +93,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="780E8C7F-61BA-B8D1-CF86-920AC9FC6B1F"/>
+<colUsage columnID="40A00360-1B77-B444-E77B-65223075132E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

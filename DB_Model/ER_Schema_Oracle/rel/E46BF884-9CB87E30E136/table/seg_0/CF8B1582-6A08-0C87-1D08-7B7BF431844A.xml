@@ -6,6 +6,15 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="host_response_time_id" id="9DC7081E-78CF-DEFB-553F-BC507712911E">
+<createdBy>brad</createdBy>
+<createdTime>2019-04-16 12:47:58 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="host_response_time" id="F714C023-BA61-8206-8097-9A129C08E77D">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-19 17:20:59 UTC</createdTime>
@@ -13,7 +22,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
+<dataTypeSize>30</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -26,7 +35,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F714C023-BA61-8206-8097-9A129C08E77D"/>
+<colUsage columnID="9DC7081E-78CF-DEFB-553F-BC507712911E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

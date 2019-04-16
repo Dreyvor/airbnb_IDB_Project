@@ -6,6 +6,15 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cancellation_policy_id" id="7E824DCB-3F4B-20A0-EF4E-8BC7CDEE7FA0">
+<createdBy>brad</createdBy>
+<createdTime>2019-04-16 12:39:32 UTC</createdTime>
+<ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="cancellation_policy" id="26CAC17B-375B-CEAB-878E-064F04C11BA2">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:41:48 UTC</createdTime>
@@ -26,7 +35,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="26CAC17B-375B-CEAB-878E-064F04C11BA2"/>
+<colUsage columnID="7E824DCB-3F4B-20A0-EF4E-8BC7CDEE7FA0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

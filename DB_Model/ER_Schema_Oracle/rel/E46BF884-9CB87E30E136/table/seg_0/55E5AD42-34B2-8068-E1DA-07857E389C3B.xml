@@ -80,46 +80,46 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="bed_type" id="4F47FBDC-5A52-025C-59F9-CAF192BB1254">
+<Column name="bed_type" id="DB223B13-F778-9403-EC37-8231B5446B58">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 10:16:13 UTC</createdTime>
+<createdTime>2019-04-16 12:37:36 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<delegate>4924052F-4FA2-C063-BC6B-9C265A1934AD</delegate>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>509206D2-0C7B-AD6C-9E16-A522C9C03841</delegate>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="0D443DD1-3230-D20A-CDB4-2F0BDCA6FE1B" referredColumn="4924052F-4FA2-C063-BC6B-9C265A1934AD"/>
+<colAssociation fkAssociation="0D443DD1-3230-D20A-CDB4-2F0BDCA6FE1B" referredColumn="509206D2-0C7B-AD6C-9E16-A522C9C03841"/>
 </associations>
 </Column>
-<Column name="room_type" id="48D439E3-6031-7867-4C86-EB75786EBD21">
+<Column name="property_type" id="5DEBBE5C-F0FC-A3F6-7759-6B14386785D0">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 10:16:30 UTC</createdTime>
+<createdTime>2019-04-16 12:46:17 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<delegate>27991FA4-2CC5-F1A0-F2C8-F33C998C7C0E</delegate>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>E39EDD6A-DB24-E97B-D2DF-802D5D995DBD</delegate>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="90A7E92B-76A7-0F0D-4CAD-42A2F09B9432" referredColumn="27991FA4-2CC5-F1A0-F2C8-F33C998C7C0E"/>
+<colAssociation fkAssociation="5B6CC2EE-490C-6D8B-D279-F22448BF3E5C" referredColumn="E39EDD6A-DB24-E97B-D2DF-802D5D995DBD"/>
 </associations>
 </Column>
-<Column name="property_type" id="EB7B392A-BA21-2513-A775-02D2BB7AED06">
+<Column name="room_type" id="92771F5B-AE8F-B078-CCDB-F07DD6250858">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-18 10:16:30 UTC</createdTime>
+<createdTime>2019-04-16 12:54:13 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<delegate>08060200-A1A3-2428-CCEE-6D3F0D30B41A</delegate>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8D90B007-318C-85C7-DD91-10C58FB28088</delegate>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="5B6CC2EE-490C-6D8B-D279-F22448BF3E5C" referredColumn="08060200-A1A3-2428-CCEE-6D3F0D30B41A"/>
+<colAssociation fkAssociation="90A7E92B-76A7-0F0D-4CAD-42A2F09B9432" referredColumn="8D90B007-318C-85C7-DD91-10C58FB28088"/>
 </associations>
 </Column>
 </columns>
@@ -142,7 +142,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="EB7B392A-BA21-2513-A775-02D2BB7AED06"/>
+<colUsage columnID="5DEBBE5C-F0FC-A3F6-7759-6B14386785D0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C01BA1C8-5AF3-C2B3-7615-B1F806EF3FF4" name="House_details_room_typePL_FK">
@@ -152,7 +152,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="48D439E3-6031-7867-4C86-EB75786EBD21"/>
+<colUsage columnID="92771F5B-AE8F-B078-CCDB-F07DD6250858"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="7807AC68-5D58-FDE6-12A7-55C40B269DAC" name="House_details_bed_typePL_FK">
@@ -162,7 +162,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4F47FBDC-5A52-025C-59F9-CAF192BB1254"/>
+<colUsage columnID="DB223B13-F778-9403-EC37-8231B5446B58"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="D6448E99-2524-AA93-7D7C-4A76DC42A093" name="House_details_Listing_FK">

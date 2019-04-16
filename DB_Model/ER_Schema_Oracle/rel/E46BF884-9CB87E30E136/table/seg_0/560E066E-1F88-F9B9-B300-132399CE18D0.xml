@@ -45,7 +45,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>48</dataTypeSize>
+<dataTypeSize>60</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="host_response_rate" id="E0D818FD-970A-2121-5FD4-B0E45A4F3166">
@@ -90,18 +90,18 @@
 <colAssociation fkAssociation="E14C9CF7-9E39-CC8E-B221-BA951941DD10" referredColumn="75F85755-9C8F-E99F-217E-939536FB0979"/>
 </associations>
 </Column>
-<Column name="host_response_time" id="16E1EE87-49C1-F88C-92C7-0DFB5D0AC66E">
+<Column name="host_response_time" id="451EECF1-9003-FFA9-6C5B-0C461CA3D329">
 <createdBy>brad</createdBy>
-<createdTime>2019-03-19 17:20:22 UTC</createdTime>
+<createdTime>2019-04-16 12:47:58 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<delegate>F714C023-BA61-8206-8097-9A129C08E77D</delegate>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9DC7081E-78CF-DEFB-553F-BC507712911E</delegate>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="1CC9B259-2000-82F0-13E1-EEE5E70FB118" referredColumn="F714C023-BA61-8206-8097-9A129C08E77D"/>
+<colAssociation fkAssociation="1CC9B259-2000-82F0-13E1-EEE5E70FB118" referredColumn="9DC7081E-78CF-DEFB-553F-BC507712911E"/>
 </associations>
 </Column>
 </columns>
@@ -134,7 +134,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="16E1EE87-49C1-F88C-92C7-0DFB5D0AC66E"/>
+<colUsage columnID="451EECF1-9003-FFA9-6C5B-0C461CA3D329"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="B6C93CD9-E56F-F238-03F6-954DD89D453E" name="Host_user_FK">
