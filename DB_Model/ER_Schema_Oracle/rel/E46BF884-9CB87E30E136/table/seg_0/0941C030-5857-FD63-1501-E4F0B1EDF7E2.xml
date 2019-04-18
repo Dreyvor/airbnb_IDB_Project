@@ -17,7 +17,7 @@
 <dataTypeSize>2</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="country" id="19F939C7-8DE9-DE06-EBFC-5AF234B226A1">
+<Column name="country_name" id="19F939C7-8DE9-DE06-EBFC-5AF234B226A1">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-13 11:02:53 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>

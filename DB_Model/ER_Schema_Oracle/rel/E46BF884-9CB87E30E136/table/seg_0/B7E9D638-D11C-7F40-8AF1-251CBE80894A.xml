@@ -94,6 +94,7 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-13 10:53:11 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
@@ -104,6 +105,7 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-13 10:53:17 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>

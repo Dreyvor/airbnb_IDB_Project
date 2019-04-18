@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C28EDDB-5396-2BD6-BB07-0FDDC33904CA" name="user">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C28EDDB-5396-2BD6-BB07-0FDDC33904CA" name="all_users">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-19 17:35:42 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>

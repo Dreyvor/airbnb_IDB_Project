@@ -23,6 +23,7 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:15:15 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
@@ -77,6 +78,7 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:16:28 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -86,6 +88,7 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 12:17:03 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>

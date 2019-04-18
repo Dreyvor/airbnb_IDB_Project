@@ -7,7 +7,7 @@
 <isEngineerToRelation>true</isEngineerToRelation>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="6A36EBE7-3E82-48ED-D565-F644814B0037">
+<Column name="listing_id" id="6A36EBE7-3E82-48ED-D565-F644814B0037">
 <createdBy>brad</createdBy>
 <createdTime>2019-03-13 10:39:07 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>

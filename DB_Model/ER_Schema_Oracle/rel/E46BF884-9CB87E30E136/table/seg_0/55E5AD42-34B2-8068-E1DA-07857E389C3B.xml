@@ -75,9 +75,11 @@
 <createdBy>brad</createdBy>
 <createdTime>2019-03-18 10:14:55 UTC</createdTime>
 <ownerDesignName>ER_Schema_Oracle</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="bed_type" id="DB223B13-F778-9403-EC37-8231B5446B58">
@@ -103,7 +105,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <delegate>E39EDD6A-DB24-E97B-D2DF-802D5D995DBD</delegate>
 <previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementIncrementBy>0</autoIncrementIncrementBy>
+<autoIncrementOrder>false</autoIncrementOrder>
 <associations>
 <colAssociation fkAssociation="5B6CC2EE-490C-6D8B-D279-F22448BF3E5C" referredColumn="E39EDD6A-DB24-E97B-D2DF-802D5D995DBD"/>
 </associations>
@@ -115,6 +119,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
 <delegate>8D90B007-318C-85C7-DD91-10C58FB28088</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>

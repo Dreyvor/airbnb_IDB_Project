@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlSearch">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Views">
+                  <items>
+                        <MenuItem fx:id="menuMainPage" mnemonicParsing="false" onAction="#gotoViewMain" text="Main page" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem fx:id="menuSearch" mnemonicParsing="false" onAction="#gotoViewSearch" text="Search" />
+                        <MenuItem fx:id="menuPredQueries" mnemonicParsing="false" onAction="#gotoViewPredQuer" text="Predefined Queries" />
+                        <MenuItem fx:id="menuInsDel" mnemonicParsing="false" onAction="#gotoViewInsDel" text="Insert/delete" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="20.0">
+               <children>
+                  <Label text="Select tables to search in :" />
+                  <CheckBox fx:id="chkListing" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="LISTING" />
+                  <CheckBox fx:id="chkHost" mnemonicParsing="false" text="HOST" />
+                  <CheckBox fx:id="chkReview" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="REVIEW_COMMENTS" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <TextField fx:id="searchTerms" prefHeight="25.0" prefWidth="430.0" promptText="Search terms" />
+                  <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#btnSearchClk" text="Search" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

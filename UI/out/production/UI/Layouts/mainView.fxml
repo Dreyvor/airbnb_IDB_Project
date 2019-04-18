@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlMain">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Views">
+                  <items>
+                        <MenuItem fx:id="menuMainPage" mnemonicParsing="false" onAction="#gotoViewMain" text="Main page" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem fx:id="menuSearch" mnemonicParsing="false" onAction="#gotoViewSearch" text="Search" />
+                        <MenuItem fx:id="menuPredQueries" mnemonicParsing="false" onAction="#gotoViewPredQuer" text="Predefined Queries" />
+                        <MenuItem fx:id="menuInsDel" mnemonicParsing="false" onAction="#gotoViewInsDel" text="Insert/delete" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TextArea fx:id="txtArWelcome" editable="false" wrapText="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextArea>
+   </center>
+</BorderPane>
