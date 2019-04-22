@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application{
-    enum Table{LISTING, HOST, REVIEW_COMMENTS, NONE}
+    //enum Table{LISTING, HOST, REVIEW_COMMENTS, NONE}
 
     public static void main(String[] args){
         launch(args);   //launch the javaFX app (goes to start method)

@@ -28,4 +28,85 @@
          </children>
       </VBox>
    </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="15.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Queries Milestone 2" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q2.1" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" minWidth="70.0" mnemonicParsing="false" text="Q2.2" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" minWidth="70.0" mnemonicParsing="false" text="Q2.3" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" minWidth="70.0" mnemonicParsing="false" text="Q2.4" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="35.0" minWidth="70.0" mnemonicParsing="false" text="Q2.5" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" minWidth="70.0" mnemonicParsing="false" text="Q2.6" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="60.0" minWidth="70.0" mnemonicParsing="false" text="Q2.7" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="85.0" minWidth="70.0" mnemonicParsing="false" text="Q2.8" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="35.0" minWidth="70.0" mnemonicParsing="false" text="Q2.9" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="110.0" minWidth="70.0" mnemonicParsing="false" text="Q2.10" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Queries Milestone 3" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.1" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.2" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.3" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.4" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.5" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.6" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.7" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.8" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.9" textAlignment="CENTER" />
+                  <Button minWidth="70.0" mnemonicParsing="false" text="Q3.10" textAlignment="CENTER" />
+                  <Button layoutX="10.0" layoutY="225.0" minWidth="70.0" mnemonicParsing="false" text="Q3.11" textAlignment="CENTER" />
+                  <Button layoutX="10.0" layoutY="250.0" minWidth="70.0" mnemonicParsing="false" text="Q3.12" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
 </BorderPane>

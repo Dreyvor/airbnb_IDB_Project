@@ -14,4 +14,6 @@ public class CtrlPredQuer {
     public void gotoViewInsDel() {
         CtrlMenu.changeView("Insert/delete");
     }
+
+
 }

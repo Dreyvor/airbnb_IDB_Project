@@ -3,8 +3,8 @@ import javafx.stage.Stage;
 public class CtrlMenu {
 
 
-    public static void changeView(String newView){
-        switch (newView){
+    public static void changeView(String newView) {
+        switch (newView) {
             case "Main":
                 MyApplication.window.setScene(MyApplication.mainScene);
                 break;

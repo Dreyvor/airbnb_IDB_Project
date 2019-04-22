@@ -1,4 +1,3 @@
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -13,7 +12,6 @@ public abstract class MyApplication {
     public static Stage window;
     public static Scene mainScene;
     public static Scene searchScene;
-    public static Scene resSearchScene;
     public static Scene predQuerScene;
     public static Scene insDelScene;
 
