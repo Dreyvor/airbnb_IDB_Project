@@ -7,10 +7,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 
-public class Main extends Application{
+public class Main extends Application {
     //enum Table{LISTING, HOST, REVIEW_COMMENTS, NONE}
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         launch(args);   //launch the javaFX app (goes to start method)
     }
 
@@ -23,9 +23,9 @@ public class Main extends Application{
 
         //Load FXML and create scenes
         Parent mainViewLoader = FXMLLoader.load(getClass().getResource("Layouts/mainView.fxml"));
-        MyApplication.mainScene = new Scene(mainViewLoader,MyApplication.width,MyApplication.height);
+        MyApplication.mainScene = new Scene(mainViewLoader, MyApplication.width, MyApplication.height);
         Parent searchViewLoader = FXMLLoader.load(getClass().getResource("Layouts/searchView.fxml"));
-        MyApplication.searchScene = new Scene(searchViewLoader,MyApplication.width, MyApplication.height);
+        MyApplication.searchScene = new Scene(searchViewLoader, MyApplication.width, MyApplication.height);
         Parent predQuerViewLoader = FXMLLoader.load(getClass().getResource("Layouts/predQuerView.fxml"));
         MyApplication.predQuerScene = new Scene(predQuerViewLoader, MyApplication.width, MyApplication.height);
         Parent insDelViewLoader = FXMLLoader.load(getClass().getResource("Layouts/insDelView.fxml"));
@@ -35,7 +35,7 @@ public class Main extends Application{
         primaryStage.setTitle("Welcome to AirBnb");
 
         //add scene to the stage and displays it
-        primaryStage.setScene(MyApplication.searchScene); //TODO: CORRECT PRIMARY STAGE TO "mainScene"
+        primaryStage.setScene(MyApplication.predQuerScene); //TODO: CORRECT PRIMARY STAGE TO "mainScene"
         primaryStage.show();
     }
 

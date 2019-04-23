@@ -1,3 +1,16 @@
+import javafx.application.Platform;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+import javafx.util.Callback;
+
 import java.sql.*;
 import java.util.List;
 import java.util.ArrayList;
@@ -222,5 +235,115 @@ public class Utils {
         }
 
         return columnNames;
+    }
+
+    public static void execAndDisplayQuery(String query, ArrayList<String> columnNames, String windowTitle) {
+
+        if (query != null && query != "") {
+            //Create the new stage
+            Stage resStage = new Stage();
+            resStage.setTitle("Search results for terms in table : " + windowTitle);
+            BorderPane myBorderPane = new BorderPane();
+            resStage.setScene(new Scene(myBorderPane, MyApplication.width, MyApplication.height));
+
+
+            //create result table for each table and put it in a scrollPane
+            ScrollPane scroll = new ScrollPane();
+            TableView resTableView = new TableView();
+            scroll.setContent(resTableView);
+            scroll.setFitToHeight(true);
+            scroll.setFitToWidth(true);
+            myBorderPane.setCenter(scroll);
+
+            System.out.println(query + "==> query ready -> launching a new thread");
+
+            //Create a new theard to launch asychronously
+            Thread thread = new Thread(() -> {
+                System.out.println("Query thread launched");
+                //execute statement and insert them into the table view
+                ResultSet res = Utils.executeQuery(query);
+                System.out.println("ResultSet OK");
+
+                //trick to run the update on the UI thread
+                Platform.runLater(() -> putResInTable(columnNames, res, resTableView));
+            });
+            resStage.show();
+
+            thread.start();
+
+        }else System.out.println("#*** The query is not defined or null ! ***#");
+
+    }
+
+    /**
+     * Method used to insert into a panel a tableview filled with a resulset
+     *
+     * @param res          the resulset of the executed query
+     * @param resTableView the tableview in which the datas must be inserted
+     */
+    public static void putResInTable(ArrayList<String> columnNames, ResultSet res, TableView resTableView) {
+        //If columnNames is null or empty, construct them from the resultSet res
+        if ((columnNames == null || columnNames.size() == 0) && res != null){
+            try {
+                columnNames = new ArrayList<>();
+                ResultSetMetaData resMetaData = res.getMetaData();
+                for (int i = 1; i < resMetaData.getColumnCount() + 1; i++) {
+                    columnNames.add(resMetaData.getColumnName(i));
+                }
+            }catch (java.sql.SQLException e){
+                e.printStackTrace();
+            }
+        }
+
+        //List where the result data will be stored
+        ObservableList<ObservableList<String>> data = FXCollections.observableArrayList();
+
+        //create columns, read result and insert data into the table
+        try {
+            for (int i = 0; i < columnNames.size(); ++i) {
+                final int j = i;
+
+                TableColumn col = new TableColumn(columnNames.get(i));
+
+                //define what to do when receiving data from observable list
+                col.setCellValueFactory((Callback<TableColumn.CellDataFeatures<ObservableList, String>, ObservableValue<String>>) param -> {
+                    if ((param.getValue().size()) > j) {
+                        final Object theValue = param.getValue().get(j);
+                        if (theValue != null) {
+                            return new SimpleStringProperty(theValue.toString());
+                        }
+                    }
+                    return null;
+                });
+
+                resTableView.getColumns().add(col);
+
+            }
+
+
+            //retrieve data from resulset
+            while (res.next()) {
+                //get data from result set by row
+                ObservableList<String> row = FXCollections.observableArrayList();
+
+                for (int i = 1; i < res.getMetaData().getColumnCount() + 1; ++i) {
+
+                    row.add(res.getString(i));
+                }
+
+                data.add(row);
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //put the data into table view
+        System.out.println(data.size());
+        resTableView.setItems(data);
+
+        System.out.println("View updated !");
+
     }
 }
