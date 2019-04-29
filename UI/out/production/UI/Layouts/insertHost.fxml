@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlInsertHost">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Views">
+                  <items>
+                        <MenuItem fx:id="menuMainPage" mnemonicParsing="false" onAction="#gotoViewMain" text="Main page" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem fx:id="menuSearch" mnemonicParsing="false" onAction="#gotoViewSearch" text="Search" />
+                        <MenuItem fx:id="menuPredQueries" mnemonicParsing="false" onAction="#gotoViewPredQuer" text="Predefined Queries" />
+                        <MenuItem fx:id="menuInsDel" mnemonicParsing="false" onAction="#gotoViewInsDel" text="Insert/delete" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="host_id:" />
+                  <TextField fx:id="txtFHost_id" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
+               <children>
+                  <Label text="host_about:" />
+                  <TextField fx:id="txtFHost_about" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
+               <children>
+                  <Label text="host_since (YYYY-MM-DD):" />
+                  <TextField fx:id="txtFHost_since" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" spacing="15.0">
+               <children>
+                  <Label text="host_url:" />
+                  <TextField fx:id="txtFHost_url" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
+               <children>
+                  <Label text="host_response_rate:" />
+                  <TextField fx:id="txtFHost_response_rate" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="310.0" spacing="15.0">
+               <children>
+                  <Label text="host_thumbnail_url:" />
+                  <TextField fx:id="txtFHost_thumbnail_url" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="210.0" spacing="15.0">
+               <children>
+                  <Label text="host_picture_url:" />
+                  <TextField fx:id="txtFHost_picture_url" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" spacing="15.0">
+               <children>
+                  <Label text="neighbourhood_id:" />
+                  <TextField fx:id="txtFNeigbourhood_id" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="509.0" spacing="15.0">
+               <children>
+                  <Label text="host_response_time:" />
+                  <TextField fx:id="txtFHost_response_time" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#btnInsertClk" text="Insert" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

@@ -14,6 +14,10 @@ public abstract class MyApplication {
     public static Scene searchScene;
     public static Scene predQuerScene;
     public static Scene insDelScene;
+    public static Scene insertListing;
+    public static Scene insertHost;
+    public static Scene insertReview;
+
 
     public static final int width = 800;
     public static final int height = 600;

@@ -82,28 +82,89 @@ public class CtrlPredQuer {
     //#########################################
     //Begin interesting things
 
-    String q21 = "Select name as Listing_name from listing where name like '%home%'";
-    String q22 = "select avg(price) as average from price";
-    String q23 = "Select * from listing where name like '%home%'";
-    String q24 = "Select * from listing where name like '%home%'";
-    String q25 = "Select * from listing where name like '%home%'";
-    String q26 = "Select * from listing where name like '%home%'";
-    String q27 = "Select * from listing where name like '%home%'";
-    String q28 = "Select * from listing where name like '%home%'";
-    String q29 = "Select * from listing where name like '%home%'";
-    String q210 = "Select * from listing where name like '%home%'";
+    private String q21 = "select avg(price) as Average_price" +
+            " from price p" +
+            " join house_details hd on p.listing_id = hd.listing_id and hd.bedrooms = 8.0";
 
-    String q31 = "Select * from listing where name like '%home%'";
-    String q32 = "Select * from listing where name like '%home%'";
-    String q33 = "Select * from listing where name like '%home%'";
-    String q34 = "Select * from listing where name like '%home%'";
-    String q35 = "Select * from listing where name like '%home%'";
-    String q36 = "Select * from listing where name like '%home%'";
-    String q37 = "Select * from listing where name like '%home%'";
-    String q38 = "Select * from listing where name like '%home%'";
-    String q39 = "Select * from listing where name like '%home%'";
-    String q310 = "Select * from listing where name like '%home%'";
-    String q311 = "Select * from listing where name like '%home%'";
-    String q312 = "Select * from listing where name like '%home%'";
+    private String q22 = "select avg(rg.review_scores_cleanliness)" +
+            " from amenitiesPL aPL" +
+            " join amenitiesREL aREL on aREL.AMENITIES_ID = aPL.AMENITIES_ID and aPL.AMENITIES like 'TV'" +
+            " join house_details hds on hds.LISTING_ID = aREL.LISTING_ID" +
+            " join listing l on l.LISTING_ID = hds.LISTING_ID" +
+            " join review_grades rg on rg.LISTING_ID = l.LISTING_ID";
+
+    private String q23 = "select h.host_id, au.user_name" +
+            " from host h join all_users au on au.user_id = h.host_id" +
+            " where h.host_id in" +
+            " (select distinct l.host_id from listing l join calendar ca on l.listing_id = ca.listing_id" +
+            " and ca.available = 't' and ca.\"date\" >= date '2019-03-01'" +
+            " and ca.\"date\" <= date '2019-09-01')";
+
+    private String q24 = "select COUNT(*)" +
+            " from LISTING L" +
+            " join ALL_USERS AU on L.HOST_ID = AU.USER_ID and AU.USER_ID IN" +
+            " (Select AU1.USER_ID" +
+            " from ALL_USERS AU1" +
+            " join ALL_USERS AU2 on AU1.USER_NAME = AU2.USER_NAME and AU1.USER_ID != AU2.USER_ID)";
+
+    private String q25 = "Select distinct ca.\"date\"" +
+            " from calendar ca" +
+            " join listing l on l.LISTING_ID = ca.LISTING_ID and ca.AVAILABLE = 't'" +
+            " join all_users au on au.USER_ID = l.HOST_ID  and au.USER_NAME like 'Viajes Eco'";
+
+    private String q26 = "select *" +
+            " from all_users au" +
+            " where au.USER_ID in" +
+            " (select l.host_id from listing l GROUP BY l.HOST_ID having count(*) = 1)";
+
+    private String q27 = "select avg(p1.price) - avg(p2.price) as \"Difference withWifi-noWifi\"" +
+            " from price p1, price p2" +
+            " where p1.LISTING_ID in" +
+            " (select aREL.listing_id" +
+            " from amenitiesPL aPL join amenitiesREL aREL on aREL.AMENITIES_ID = aPL.AMENITIES_ID and aPL.AMENITIES = 'Wifi')" +
+            " and p2.LISTING_ID not in" +
+            " (select aREL.listing_id" +
+            " from amenitiesPL aPL join amenitiesREL aREL on aREL.AMENITIES_ID = aPL.AMENITIES_ID and aPL.AMENITIES = 'Wifi')";
+
+    private String q28 = "select avg(p1.price) - avg(p2.price) as \"Difference Berlin-Madrid\"" +
+            " from price p1 join price p2 on not p2.LISTING_ID = p1.LISTING_ID" +
+            " where p1.LISTING_ID in" +
+            " (select hds.listing_id" +
+            " from cityPL cPL join neighbourhoodPL nPL on nPL.CITY_ID = cPL.CITY_ID and cPL.CITY = 'Berlin'" +
+            " join listing l on nPL.NEIGHBOURHOOD_ID = l.NEIGHBOURHOOD_ID" +
+            " join house_details hds on l.LISTING_ID = hds.LISTING_ID and hds.BEDROOMS = 8)" +
+            " and p2.LISTING_ID in" +
+            " (select hds.listing_id" +
+            " from cityPL cPL join neighbourhoodPL nPL on nPL.CITY_ID = cPL.CITY_ID and cPL.CITY = 'Madrid'" +
+            " join listing l on nPL.NEIGHBOURHOOD_ID = l.NEIGHBOURHOOD_ID" +
+            " join house_details hds on l.LISTING_ID = hds.LISTING_ID and hds.BEDROOMS = 8)";
+
+    private String q29 = "select au.user_id, au.user_name, count(l.HOST_ID) as listing_counter" +
+            " from cityPL cPL" +
+            " join neighbourhoodPL nPL on nPL.CITY_ID = cPL.CITY_ID and cPL.COUNTRY_CODE = 'ES'" +
+            " join listing l on nPL.NEIGHBOURHOOD_ID = l.NEIGHBOURHOOD_ID" +
+            " join all_users au on l.HOST_ID = au.user_id" +
+            " group by au.user_id, au.user_name" +
+            " order by listing_counter desc fetch first 10 rows only";
+
+    private String q210 = "select l.listing_id, l.name" +
+            " from cityPL cPL" +
+            " join neighbourhoodPL nPL on nPL.CITY_ID = cPL.CITY_ID and cPL.CITY = 'Barcelona'" +
+            " join listing l on nPL.NEIGHBOURHOOD_ID = l.NEIGHBOURHOOD_ID" +
+            " join review_grades rg on rg.LISTING_ID = l.LISTING_ID and rg.REVIEW_SCORES_RATING is not null" +
+            " order by rg.REVIEW_SCORES_RATING desc fetch first 10 rows only";
+
+    private String q31 = "Select * from listing where name like '%home%'";
+    private String q32 = "Select * from listing where name like '%home%'";
+    private String q33 = "Select * from listing where name like '%home%'";
+    private String q34 = "Select * from listing where name like '%home%'";
+    private String q35 = "Select * from listing where name like '%home%'";
+    private String q36 = "Select * from listing where name like '%home%'";
+    private String q37 = "Select * from listing where name like '%home%'";
+    private String q38 = "Select * from listing where name like '%home%'";
+    private String q39 = "Select * from listing where name like '%home%'";
+    private String q310 = "Select * from listing where name like '%home%'";
+    private String q311 = "Select * from listing where name like '%home%'";
+    private String q312 = "Select * from listing where name like '%home%'";
 
 }

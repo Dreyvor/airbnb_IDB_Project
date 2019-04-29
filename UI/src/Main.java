@@ -31,11 +31,18 @@ public class Main extends Application {
         Parent insDelViewLoader = FXMLLoader.load(getClass().getResource("Layouts/insDelView.fxml"));
         MyApplication.insDelScene = new Scene(insDelViewLoader, MyApplication.width, MyApplication.height);
 
+        Parent insertListingLoader = FXMLLoader.load(getClass().getResource("Layouts/insertListing.fxml"));
+        MyApplication.insertListing = new Scene(insertListingLoader, MyApplication.width, MyApplication.height);
+        Parent insertHostLoader = FXMLLoader.load(getClass().getResource("Layouts/insertHost.fxml"));
+        MyApplication.insertHost = new Scene(insertHostLoader, MyApplication.width, MyApplication.height);
+        Parent insertReviewLoader = FXMLLoader.load(getClass().getResource("Layouts/insertReview.fxml"));
+        MyApplication.insertReview = new Scene(insertReviewLoader, MyApplication.width, MyApplication.height);
+
         //set titles of components during initialization
         primaryStage.setTitle("Welcome to AirBnb");
 
         //add scene to the stage and displays it
-        primaryStage.setScene(MyApplication.predQuerScene); //TODO: CORRECT PRIMARY STAGE TO "mainScene"
+        primaryStage.setScene(MyApplication.insDelScene); //TODO: CORRECT PRIMARY STAGE TO "mainScene"
         primaryStage.show();
     }
 
