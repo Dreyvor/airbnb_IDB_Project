@@ -43,10 +43,16 @@ public class CtrlSearch {
         //Let's construct one window per selected tables
         tables.forEach(elem -> {
             // Specify which column to search into for each table
-            ArrayList<String> columnNames = Utils.getColumnsFromTable(elem);
+            ArrayList<String> columnNames = Utils.getColumnsFromTable(elem, true);
+
+            if(elem == Table.HOST){
+                columnNames = new ArrayList<>(columnNames.subList(2, columnNames.size()));
+                columnNames.add("user_id");
+                columnNames.add("user_name");
+            }
 
             // Build the query
-            String query = "SELECT * FROM " + elem.toString() + " " + Utils.generateSubstringMatch(terms, columnNames);
+            String query = "SELECT * FROM " + elem.toString() + " " + Utils.generateSubstringMatch(terms, columnNames, elem);
             String windowTitle = Utils.tableToString(elem);
 
             //Execute query and display the results

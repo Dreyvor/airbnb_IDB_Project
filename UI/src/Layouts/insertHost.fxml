@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlInsertHost">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlInsDelHost">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
@@ -31,7 +31,13 @@
             <HBox spacing="15.0">
                <children>
                   <Label text="host_id:" />
-                  <TextField fx:id="txtFHost_id" />
+                  <TextField fx:id="txtFHost_id" prefWidth="230.0" promptText="mandatory for insert and delete" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
+               <children>
+                  <Label text="host_name:" />
+                  <TextField fx:id="txtFHost_name" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
@@ -43,13 +49,13 @@
             <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
                <children>
                   <Label text="host_since (YYYY-MM-DD):" />
-                  <TextField fx:id="txtFHost_since" />
+                  <TextField fx:id="txtFHost_since" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="110.0" spacing="15.0">
                <children>
                   <Label text="host_url:" />
-                  <TextField fx:id="txtFHost_url" />
+                  <TextField fx:id="txtFHost_url" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
@@ -73,16 +79,21 @@
             <HBox layoutX="10.0" layoutY="110.0" spacing="15.0">
                <children>
                   <Label text="neighbourhood_id:" />
-                  <TextField fx:id="txtFNeigbourhood_id" />
+                  <TextField fx:id="txtFNeigbourhood_id" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="509.0" spacing="15.0">
                <children>
                   <Label text="host_response_time:" />
-                  <TextField fx:id="txtFHost_response_time" />
+                  <TextField fx:id="txtFHost_response_time" promptText="mandatory for insert" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" onAction="#btnInsertClk" text="Insert" />
+            <HBox spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnInsertClk" text="Insert" />
+                  <Button layoutX="10.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnDeleteClk" text="Delete" />
+               </children>
+            </HBox>
          </children>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

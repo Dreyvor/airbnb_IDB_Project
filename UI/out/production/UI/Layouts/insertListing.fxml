@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlInsertListing">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlInsDelListing">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
@@ -31,19 +31,19 @@
             <HBox alignment="CENTER_LEFT" spacing="15.0">
                <children>
                   <Label text="listing_id:" />
-                  <TextField fx:id="txtFListing_id" />
+                  <TextField fx:id="txtFListing_id" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="15.0">
                <children>
                   <Label text="name:" />
-                  <TextField fx:id="txtFName" />
+                  <TextField fx:id="txtFName" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="15.0">
                <children>
                   <Label text="listing_url:" />
-                  <TextField fx:id="txtFListing_url" />
+                  <TextField fx:id="txtFListing_url" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="110.0" spacing="15.0">
@@ -61,16 +61,21 @@
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="15.0">
                <children>
                   <Label text="neighbourhood_id:" />
-                  <TextField fx:id="txtFNeighbourghood_id" />
+                  <TextField fx:id="txtFNeighbourghood_id" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="210.0" spacing="15.0">
                <children>
                   <Label text="host_id:" />
-                  <TextField fx:id="txtFHost_id" />
+                  <TextField fx:id="txtFHost_id" promptText="mandatory for insert" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" onAction="#btnInsertClk" text="Insert" />
+            <HBox spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnInsertClk" text="Insert" />
+                  <Button layoutX="10.0" layoutY="290.0" mnemonicParsing="false" onAction="#btnDeleteClk" text="Delete" />
+               </children>
+            </HBox>
          </children>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

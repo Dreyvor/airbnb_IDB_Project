@@ -29,9 +29,13 @@ public class Utils {
      * @param columns
      * @return
      */
-    public static String generateSubstringMatch(String search, List<String> columns) {
+    public static String generateSubstringMatch(String search, List<String> columns, Table table) {
 
         StringBuilder sb = new StringBuilder();
+
+        if (table == Table.HOST){
+            sb.append("join all_users au on au.user_id = host_id ");
+        }
 
         sb.append(" WHERE");
 
@@ -39,13 +43,103 @@ public class Utils {
 
             sb.append(" " + c + " LIKE '%" + search + "%'  or");
 
+        });
+        sb.delete(sb.length()-3,sb.length());
 
+        if (table == Table.HOST){
+            sb.append(" or au.user_id LIKE '%"+ search + "%' or au.user_name LIKE '%"+search+"%'");
+        }
+
+        return sb.toString();
+
+    }
+
+
+    public static String generateInsertQuery(Table table, List<String> columns, List<String> values) {
+        StringBuilder sb = new StringBuilder();
+
+        if(table == Table.HOST){
+            sb.append("INSERT INTO ");
+            sb.append("ALL_USERS (" + columns.get(0) + ", " +columns.get(1) + ") VALUES (");
+            sb.append(values.get(1) + ", '" + values.get(0) + "')");
+
+            executeQuery(sb.toString());
+
+            columns = columns.subList(2,columns.size());
+            values = values.subList(1,values.size());
+        }
+
+        sb.replace(0,sb.length(),"");
+
+        sb.append("INSERT INTO ");
+        sb.append(tableToString(table) + " (");
+
+        columns.forEach(c -> sb.append(c + ", "));
+        sb.delete(sb.length() - 2, sb.length());
+
+        sb.append(") values (");
+
+        values.forEach(v -> {
+            if(v.length() == 0){
+                sb.append("NULL, ");
+            }else if(isInt(v)){
+                sb.append(v + ", ");
+            }else if (isDate(v)){
+                sb.append("TO_DATE('" + v + "', 'YYYY-MM-DD'), ");
+            }else{
+                sb.append("'" + v + "', ");
+            }
         });
 
-        String res = sb.toString();
+        sb.delete(sb.length() - 2, sb.length());
+        sb.append(")");
 
-        return res.substring(0, res.length() - 3);
+        return sb.toString();
+    }
 
+
+    public static String generateDeleteQuery(Table table, List<String> columns, List<String> values) {
+        StringBuilder sb = new StringBuilder();
+
+        if(table == Table.HOST){
+            sb.append("DELETE FROM ");
+            sb.append("ALL_USERS AU WHERE ");
+            if(values.get(1).length() != 0) sb.append(columns.get(0) + " = " + values.get(1));
+            if(values.get(1).length() != 0 && values.get(0).length() != 0) sb.append(" AND ");
+            if(values.get(0).length() != 0) sb.append(columns.get(1) + " = '" + values.get(0) + "'");
+
+            System.out.println(sb.toString() + "==> Execute query");
+
+            executeQuery(sb.toString());
+
+            columns = columns.subList(2,columns.size());
+            values = values.subList(1,values.size());
+        }
+        sb.replace(0,sb.length(),"");
+
+        sb.append("DELETE FROM " + Utils.tableToString(table) + " WHERE ");
+
+        for (int i = 0; i < columns.size(); i++) {
+            String v = values.get(i);
+            if (v.length() == 0) {continue;}
+
+            sb.append(columns.get(i) + "=");
+
+            if(isInt(v)){
+                sb.append(v);
+            }else if (isDate(v)){
+                sb.append("TO_DATE('" + v + "', 'YYYY-MM-DD')");
+            }else{
+                sb.append("'" + v + "'");
+            }
+
+            sb.append(" and ");
+        }
+
+        sb.delete(sb.length()-5, sb.length());
+
+        //sb.append(";");
+        return sb.toString();
     }
 
 
@@ -199,7 +293,8 @@ public class Utils {
      * @param t the table
      * @return an arraylist containing the column names
      */
-    public static ArrayList<String> getColumnsFromTable(Table t) {
+    public static ArrayList<String> getColumnsFromTable(Table t, Boolean withForeignKeys) {
+        if (withForeignKeys == null) withForeignKeys = false;
 
         //will specify which column to search into for each table
         ArrayList<String> columnNames = new ArrayList<>();
@@ -212,9 +307,15 @@ public class Utils {
                 columnNames.add("listing_url");
                 columnNames.add("summary");
                 columnNames.add("space");
+                if (withForeignKeys) {
+                    columnNames.add("NEIGHBOURHOOD_ID");
+                    columnNames.add("host_id");
+                }
                 break;
 
             case HOST:
+                columnNames.add("user_id");
+                columnNames.add("user_name");
                 columnNames.add("host_id");
                 columnNames.add("host_about");
                 columnNames.add("host_since");
@@ -222,6 +323,10 @@ public class Utils {
                 columnNames.add("host_response_rate");
                 columnNames.add("host_thumbnail_url");
                 columnNames.add("host_picture_url");
+                if (withForeignKeys) {
+                    columnNames.add("NEIGHBOURHOOD_ID");
+                    columnNames.add("host_response_time");
+                }
                 break;
 
             case REVIEW_COMMENTS:
@@ -271,7 +376,7 @@ public class Utils {
 
             thread.start();
 
-        }else System.out.println("#*** The query is not defined or null ! ***#");
+        } else System.out.println("#*** The query is not defined or null ! ***#");
 
     }
 
@@ -283,14 +388,14 @@ public class Utils {
      */
     public static void putResInTable(ArrayList<String> columnNames, ResultSet res, TableView resTableView) {
         //If columnNames is null or empty, construct them from the resultSet res
-        if ((columnNames == null || columnNames.size() == 0) && res != null){
+        if ((columnNames == null || columnNames.size() == 0) && res != null) {
             try {
                 columnNames = new ArrayList<>();
                 ResultSetMetaData resMetaData = res.getMetaData();
                 for (int i = 1; i < resMetaData.getColumnCount() + 1; i++) {
                     columnNames.add(resMetaData.getColumnName(i));
                 }
-            }catch (java.sql.SQLException e){
+            } catch (java.sql.SQLException e) {
                 e.printStackTrace();
             }
         }

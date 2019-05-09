@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlInsertReview">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CtrlInsDelReview">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
@@ -31,34 +31,39 @@
             <HBox spacing="15.0">
                <children>
                   <Label text="review_id:" />
-                  <TextField fx:id="txtFReview_id" />
+                  <TextField fx:id="txtFReview_id" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
                <children>
                   <Label text="listing_id:" />
-                  <TextField fx:id="txtFListing_id" />
+                  <TextField fx:id="txtFListing_id" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="110.0" spacing="15.0">
                <children>
                   <Label text="date (YYYY-MM-DD):" />
-                  <TextField fx:id="txtFDate" />
+                  <TextField fx:id="txtFDate" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
                <children>
                   <Label text="comments:" />
-                  <TextField fx:id="txtFComments" />
+                  <TextField fx:id="txtFComments" promptText="mandatory for insert" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="310.0" spacing="15.0">
                <children>
                   <Label text="user_id:" />
-                  <TextField fx:id="txtFuser_id" />
+                  <TextField fx:id="txtFuser_id" promptText="mandatory for insert" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" onAction="#btnInsertClk" text="Insert" />
+            <HBox spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnInsertClk" text="Insert" />
+                  <Button mnemonicParsing="false" onAction="#btnDeleteClk" text="Delete" />
+               </children>
+            </HBox>
          </children>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

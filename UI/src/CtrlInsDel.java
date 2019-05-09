@@ -23,7 +23,5 @@ public class CtrlInsDel {
         MyApplication.window.setScene(MyApplication.insertHost);
     }
 
-    public void changeViewToInsertReview(){
-        MyApplication.window.setScene(MyApplication.insertReview);
-    }
+    public void changeViewToInsertReview(){ MyApplication.window.setScene(MyApplication.insertReview); }
 }
