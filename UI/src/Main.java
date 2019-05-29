@@ -42,7 +42,7 @@ public class Main extends Application {
         primaryStage.setTitle("Welcome to AirBnb");
 
         //add scene to the stage and displays it
-        primaryStage.setScene(MyApplication.insDelScene); //TODO: CORRECT PRIMARY STAGE TO "mainScene"
+        primaryStage.setScene(MyApplication.mainScene); //TODO: CORRECT PRIMARY STAGE TO "mainScene"
         primaryStage.show();
     }
 

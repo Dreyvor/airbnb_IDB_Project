@@ -31,7 +31,7 @@
             <HBox spacing="15.0">
                <children>
                   <Label text="host_id:" />
-                  <TextField fx:id="txtFHost_id" promptText="mandatory for insert" />
+                  <TextField fx:id="txtFHost_id" prefWidth="230.0" promptText="mandatory for insert and delete" />
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
