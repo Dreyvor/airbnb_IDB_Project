@@ -205,7 +205,7 @@ public class CtrlPredQuer {
             " from cityPL cPL" +
             " join neighbourhoodPL nPL on nPL.CITY_ID = cPL.CITY_ID" +
             " join listing l on nPL.NEIGHBOURHOOD_ID = l.NEIGHBOURHOOD_ID" +
-            " join house_details hds on l.LISTING_ID = hds.LISTING_ID and hds.SQUARE_FEET is not null" +
+            " join house_details hds on l.LISTING_ID = hds.LISTING_ID and hds.SQUARE_FEET is not null and hds.SQUARE_FEET != 0" +
             " group by cPL.CITY" +
             " order by cPL.CITY asc";
 
